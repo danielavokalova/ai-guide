@@ -1,6 +1,8 @@
 """
-Rebuild static AI Guide site from local GOL help Markdown export.
+Rebuild the AI Guide static site: copy Markdown + images into this repo and regenerate manifest.json.
 Run from repo root: python build_site.py
+
+Paths default to optional local sibling folders; override with AI_GUIDE_DOCS_SOURCE and AI_GUIDE_PUBLIC.
 """
 from __future__ import annotations
 
@@ -12,7 +14,7 @@ from pathlib import Path
 DEST = Path(__file__).resolve().parent
 DOCS = DEST / "docs"
 
-# Default: sibling folder Desktop/new_help/... when this repo lives on Desktop.
+# Optional: when unset, try common local layout (repo on Desktop).
 _default_source = DEST.parent / "new_help" / "gitbook_golhelp" / "content" / "docs"
 _default_public = DEST.parent / "new_help" / "gitbook_golhelp" / "public"
 SOURCE = Path(os.environ.get("AI_GUIDE_DOCS_SOURCE", str(_default_source)))

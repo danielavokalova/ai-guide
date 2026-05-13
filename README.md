@@ -1,26 +1,21 @@
-# AI Guide (static help)
+# AI Guide
 
-Public static mirror of GOL IBE help articles (Markdown), with a dark-themed single-page browser, search, and categories.
+Samostatný statický web: články v `docs/`, rozhraní v `index.html`, seznam v `manifest.json`, obrázky v `images/`.
 
-**Live site:** after GitHub Pages is enabled: `https://danielavokalova.github.io/ai-guide/`
+Tento repozitář je jediný zdroj toho, co se na webu zobrazuje — není spojený s žádným jiným veřejným projektem ani stránkou.
 
-## Regenerate content (local)
+## Obnovení obsahu (volitelné)
 
-Requires the GOL help content export next to this folder on disk:
-
-`../new_help/gitbook_golhelp/content/docs/`
-
-Or set a custom path:
+Skript jen zkopíruje Markdown a obrázky ze složek, které nastavíš v proměnných prostředí, a znovu vygeneruje `manifest.json`.
 
 ```powershell
-$env:AI_GUIDE_DOCS_SOURCE = "C:\path\to\content\docs"
+$env:AI_GUIDE_DOCS_SOURCE = "C:\cesta\k\markdown-slozce"
+$env:AI_GUIDE_PUBLIC = "C:\cesta\k\public-obrazkum"
 python build_site.py
 ```
 
-Then commit changes under `docs/` and `manifest.json`.
+Potom commitni změny v `docs/`, `images/` a `manifest.json`.
 
-## GitHub Pages
+## Publikace
 
-Repository **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch `main` / root** and save.
-
-Add `.nojekyll` (already in repo) so paths with underscores work as expected.
+V nastavení repozitáře na GitHubu zapni Pages z větve `main` z kořene projektu. V repu je soubor `.nojekyll`.

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GOL IBE Help · AI Guide</title>
+  <title>AI Guide</title>
+  <meta name="description" content="AI Guide — dokumentace na tomto webu." />
   <meta name="color-scheme" content="dark light" />
   <style>
     :root {
@@ -133,9 +134,9 @@
 </head>
 <body>
   <header>
-    <h1>GOL IBE Help · AI Guide</h1>
-    <p>Browse exported help articles. Use search to filter by title.</p>
-    <input type="search" class="search" id="q" placeholder="Search titles…" autocomplete="off" />
+    <h1>AI Guide</h1>
+    <p>Jen obsah této stránky — články vlevo, vyhledávání podle názvu.</p>
+    <input type="search" class="search" id="q" placeholder="Hledat v názvech…" autocomplete="off" />
   </header>
   <div class="layout">
     <aside>
@@ -144,11 +145,11 @@
     <main>
       <div id="meta" class="doc-meta"></div>
       <article id="view" class="content">
-        <p class="empty">Select an article from the list.</p>
+        <p class="empty">Vyberte článek v seznamu vlevo.</p>
       </article>
     </main>
   </div>
-  <footer>Static export · GitHub Pages</footer>
+  <footer>AI Guide</footer>
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
   <script>
     (async function () {
@@ -159,7 +160,7 @@
 
       const res = await fetch("manifest.json");
       if (!res.ok) {
-        viewEl.innerHTML = "<p>Could not load manifest.json.</p>";
+        viewEl.innerHTML = "<p>Nepodařilo se načíst manifest.json.</p>";
         return;
       }
       const data = await res.json();
@@ -183,8 +184,8 @@
           activeBtn = btn;
           btn.classList.add("active");
         }
-        metaEl.textContent = art.categoryLabel + " · " + art.path;
-        viewEl.innerHTML = "<p class='empty'>Loading…</p>";
+        metaEl.textContent = art.categoryLabel + " · " + art.title;
+        viewEl.innerHTML = "<p class='empty'>Načítám…</p>";
         const r = await fetch(art.path);
         const md = await r.text();
         viewEl.innerHTML = marked.parse(md);
