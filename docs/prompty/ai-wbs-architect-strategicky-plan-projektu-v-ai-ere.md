@@ -226,7 +226,7 @@ V Cowork to rozdělíš do souborů podle archetypu. V Code agentu přetavíš d
 - [ ] Nemám uměle rozdělené fáze tam, kde je to jeden AI úkol?
 - [ ] Každá aktivita má pole podle Mode (Prompt / Prompt + doladění / Checklist)?
 - [ ] Prompty jsou ready-to-use (celý prompt v uvozovkách)?
-- [ ] Pro 🔍 Research aktivity mám ready-to-use prompt v sekci 4?
+- [ ] Pro Research aktivity mám ready-to-use prompt v sekci 4?
 - [ ] Adaptoval jsem výstup podle prostředí (chat/cowork/code)?
 - [ ] Nemluvím konzultantsky?
 ```
