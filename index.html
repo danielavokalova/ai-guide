@@ -190,6 +190,11 @@
         viewEl.innerHTML = marked.parse(md);
       }
 
+      function artFromButton(btn) {
+        const p = btn.dataset.path;
+        return articles.find((x) => x.path === p);
+      }
+
       function repaint() {
         const needle = qEl.value.trim().toLowerCase();
         const filtered = needle
@@ -208,7 +213,11 @@
             const b = document.createElement("button");
             b.type = "button";
             b.textContent = a.title;
-            b.addEventListener("click", () => loadDoc(a, b));
+            b.dataset.path = a.path;
+            b.addEventListener("click", () => {
+              const art = artFromButton(b);
+              if (art) loadDoc(art, b);
+            });
             wrap.appendChild(b);
           }
           navEl.appendChild(wrap);
@@ -217,7 +226,8 @@
           const firstBtn = navEl.querySelector("button");
           if (firstBtn) {
             hasAutoLoaded = true;
-            loadDoc(filtered[0], firstBtn);
+            const first = artFromButton(firstBtn);
+            if (first) loadDoc(first, firstBtn);
           }
         }
       }
