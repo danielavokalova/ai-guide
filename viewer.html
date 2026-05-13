@@ -31,6 +31,7 @@
       top: 0;
       z-index: 20;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: 0.75rem;
       padding: 0.85rem clamp(1rem, 4vw, 2rem);
@@ -57,21 +58,23 @@
       font-size: 0.95rem;
       color: var(--muted);
       word-break: break-all;
+      flex: 1 1 12rem;
+      min-width: 0;
     }
     main {
-      max-width: 72ch;
+      max-width: 88ch;
       margin: 0 auto;
       padding: 1.5rem clamp(1rem, 4vw, 2rem) 3rem;
     }
-    .content { font-size: 1.07rem; }
+    .content { font-size: 1.1rem; line-height: 1.65; }
     .content :is(h1, h2, h3) { margin-top: 1.35rem; margin-bottom: 0.5rem; }
     .content h1 {
-      font-size: 1.75rem;
+      font-size: 1.85rem;
       border-bottom: 1px solid var(--border);
       padding-bottom: 0.4rem;
     }
-    .content h2 { font-size: 1.35rem; }
-    .content h3 { font-size: 1.15rem; }
+    .content h2 { font-size: 1.4rem; }
+    .content h3 { font-size: 1.2rem; }
     .content a { color: var(--accent); }
     .content code {
       background: var(--bg-elev);
@@ -93,12 +96,17 @@
     .content svg[role="img"] {
       display: none !important;
     }
-    .err { color: #f0a0a0; padding: 1rem; }
+    .err {
+      color: #f0a0a0;
+      padding: 1rem;
+      line-height: 1.5;
+    }
+    .err code { color: #f5c4c4; background: rgba(0,0,0,0.25); }
   </style>
 </head>
 <body>
   <div class="toolbar">
-    <a class="back" href="./index.html">← Zpět</a>
+    <a class="back" id="backHome" href="#">← Zpět na přehled</a>
     <span class="path" id="pathLabel"></span>
   </div>
   <main>
@@ -107,83 +115,131 @@
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
   <script>
     (function () {
-      const viewEl = document.getElementById("view");
-      const pathLabel = document.getElementById("pathLabel");
+      function siteRootPathname() {
+        var path = window.location.pathname || "/";
+        var v = path.indexOf("/viewer.html");
+        if (v !== -1) return path.slice(0, v) + "/";
+        if (path.endsWith("/index.html"))
+          return path.slice(0, path.lastIndexOf("/") + 1);
+        if (path.endsWith("/")) return path;
+        if (/\.html$/i.test(path))
+          return path.slice(0, path.lastIndexOf("/") + 1) || "/";
+        return path + "/";
+      }
+      function absFromRoot(rel) {
+        return new URL(rel, window.location.origin + siteRootPathname()).href;
+      }
 
-      const params = new URLSearchParams(window.location.search);
-      let p = params.get("p") || "";
-      try {
-        p = decodeURIComponent(p);
-      } catch (e) {
-        p = "";
+      var backEl = document.getElementById("backHome");
+      backEl.href = absFromRoot("index.html");
+
+      var viewEl = document.getElementById("view");
+      var pathLabel = document.getElementById("pathLabel");
+
+      function currentDocPath() {
+        var params = new URLSearchParams(window.location.search);
+        var p = params.get("p") || "";
+        try {
+          p = decodeURIComponent(p);
+        } catch (e) {
+          p = "";
+        }
+        return p;
       }
 
       function safePath(raw) {
         if (!raw || typeof raw !== "string") return null;
-        const t = raw.trim().replace(/\\/g, "/");
-        if (!t.startsWith("docs/") || t.includes("..") || t.includes("//")) return null;
+        var t = raw.trim().replace(/\\/g, "/");
+        if (!t.startsWith("docs/") || t.indexOf("..") !== -1 || t.indexOf("//") !== -1)
+          return null;
         if (!/\.md$/i.test(t)) return null;
         return t;
       }
 
       function stripEmojiTextNodes(root) {
-        const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
-        const nodes = [];
-        let n;
+        var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+        var nodes = [];
+        var n;
         while ((n = w.nextNode())) nodes.push(n);
-        for (const node of nodes) {
-          const el = node.parentElement;
+        for (var i = 0; i < nodes.length; i++) {
+          var node = nodes[i];
+          var el = node.parentElement;
           if (!el || el.closest("pre, code, script, style")) continue;
-          const s = node.nodeValue;
+          var s = node.nodeValue;
           if (!s || !/\p{Extended_Pictographic}/u.test(s)) continue;
-          node.nodeValue = s
+          var t = s
             .replace(/\p{Extended_Pictographic}/gu, "")
             .replace(/\uFE0F/g, "")
             .replace(/\u200D/g, "");
+          if (t.replace(/\s/g, "").length === 0 && s.replace(/\s/g, "").length > 0) continue;
+          node.nodeValue = t;
         }
       }
 
       function rewriteMarkdownLinks(scope) {
+        var viewerBase = absFromRoot("viewer.html");
         scope.querySelectorAll("a[href]").forEach(function (a) {
           var h = a.getAttribute("href");
-          if (!h || /^https?:/i.test(h) || h.startsWith("#") || h.startsWith("mailto:")) return;
+          if (!h || /^https?:/i.test(h) || h.startsWith("#") || h.startsWith("mailto:"))
+            return;
           if (!/\.md$/i.test(h)) return;
           var t = h.replace(/^\.\//, "");
-          if (t.includes("..")) return;
+          if (t.indexOf("..") !== -1) return;
           if (!t.startsWith("docs/")) t = "docs/" + t.replace(/^\/+/, "");
-          a.setAttribute("href", "viewer.html?p=" + encodeURIComponent(t));
+          a.setAttribute(
+            "href",
+            viewerBase + "?p=" + encodeURIComponent(t)
+          );
         });
       }
 
-      const ok = safePath(p);
-      if (!ok) {
-        viewEl.innerHTML =
-          "<p class='err'>Neplatný odkaz na dokument. Vrať se na přehled a vyber návod znovu.</p>";
-        pathLabel.textContent = "";
-        document.title = "Chyba";
-        return;
-      }
-
-      pathLabel.textContent = ok;
-      document.title = "Načítám…";
-
-      fetch("./" + ok)
-        .then(function (r) {
-          if (!r.ok) throw new Error(String(r.status));
-          return r.text();
-        })
-        .then(function (md) {
-          viewEl.innerHTML = marked.parse(md);
-          rewriteMarkdownLinks(viewEl);
-          stripEmojiTextNodes(viewEl);
-          const h1 = viewEl.querySelector("h1");
-          if (h1 && h1.textContent.trim()) document.title = h1.textContent.trim();
-        })
-        .catch(function () {
+      function load() {
+        var p = currentDocPath();
+        var ok = safePath(p);
+        if (!ok) {
           viewEl.innerHTML =
-            "<p class='err'>Obsah se nepodařilo načíst. Zkus to znovu později.</p>";
+            "<p class='err'>Neplatný odkaz na dokument. Použij <strong>Zpět na přehled</strong> a vyber návod znovu.</p>";
+          pathLabel.textContent = "";
           document.title = "Chyba";
-        });
+          return;
+        }
+
+        pathLabel.textContent = ok;
+        document.title = "Načítám…";
+        viewEl.innerHTML = "<p>Načítám obsah…</p>";
+
+        var url = absFromRoot(ok);
+        fetch(url, { cache: "no-store" })
+          .then(function (r) {
+            if (!r.ok) throw new Error(r.status + " " + r.statusText);
+            return r.text();
+          })
+          .then(function (md) {
+            if (!md || md.trim().length < 8) {
+              viewEl.innerHTML =
+                "<p class='err'>Soubor je prázdný nebo neplatný.</p>";
+              return;
+            }
+            viewEl.innerHTML = marked.parse(md);
+            rewriteMarkdownLinks(viewEl);
+            stripEmojiTextNodes(viewEl);
+            var h1 = viewEl.querySelector("h1");
+            if (h1 && h1.textContent.trim()) document.title = h1.textContent.trim();
+          })
+          .catch(function (err) {
+            viewEl.innerHTML =
+              "<p class='err'>Obsah se nepodařilo načíst.<br>Zkus obnovit stránku nebo otevřít úvodní adresu s <strong>lomítkem na konci</strong> (např. <code>…/ai-guide/</code>).<br><small>" +
+              String(err.message || err) +
+              "</small></p>";
+            document.title = "Chyba načtení";
+          });
+      }
+
+      window.addEventListener("popstate", load);
+      window.addEventListener("pageshow", function (ev) {
+        if (ev.persisted) load();
+      });
+      load();
     })();
   </script>
 </body>
