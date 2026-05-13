@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Návod</title>
+  <meta name="color-scheme" content="dark light" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --bg-elev: #1a2332;
+      --border: #2d3a4d;
+      --text: #e7ecf3;
+      --muted: #8b9cb3;
+      --accent: #5b9fd4;
+      --radius: 12px;
+      --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+      font-size: 18px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.85rem clamp(1rem, 4vw, 2rem);
+      background: var(--bg-elev);
+      border-bottom: 1px solid var(--border);
+    }
+    .toolbar a.back {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.55rem 1rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 1.05rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .toolbar a.back:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .toolbar .path {
+      font-size: 0.95rem;
+      color: var(--muted);
+      word-break: break-all;
+    }
+    main {
+      max-width: 72ch;
+      margin: 0 auto;
+      padding: 1.5rem clamp(1rem, 4vw, 2rem) 3rem;
+    }
+    .content { font-size: 1.07rem; }
+    .content :is(h1, h2, h3) { margin-top: 1.35rem; margin-bottom: 0.5rem; }
+    .content h1 {
+      font-size: 1.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+    .content h2 { font-size: 1.35rem; }
+    .content h3 { font-size: 1.15rem; }
+    .content a { color: var(--accent); }
+    .content code {
+      background: var(--bg-elev);
+      padding: 0.12rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.92em;
+    }
+    .content pre {
+      background: var(--bg-elev);
+      padding: 1rem;
+      border-radius: var(--radius);
+      overflow: auto;
+      border: 1px solid var(--border);
+      font-size: 0.95em;
+    }
+    .content pre code { background: none; padding: 0; }
+    .content img,
+    .content picture,
+    .content svg[role="img"] {
+      display: none !important;
+    }
+    .err { color: #f0a0a0; padding: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a class="back" href="./index.html">← Zpět</a>
+    <span class="path" id="pathLabel"></span>
+  </div>
+  <main>
+    <article id="view" class="content"></article>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script>
+    (function () {
+      const viewEl = document.getElementById("view");
+      const pathLabel = document.getElementById("pathLabel");
+
+      const params = new URLSearchParams(window.location.search);
+      let p = params.get("p") || "";
+      try {
+        p = decodeURIComponent(p);
+      } catch (e) {
+        p = "";
+      }
+
+      function safePath(raw) {
+        if (!raw || typeof raw !== "string") return null;
+        const t = raw.trim().replace(/\\/g, "/");
+        if (!t.startsWith("docs/") || t.includes("..") || t.includes("//")) return null;
+        if (!/\.md$/i.test(t)) return null;
+        return t;
+      }
+
+      function stripEmojiTextNodes(root) {
+        const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+        const nodes = [];
+        let n;
+        while ((n = w.nextNode())) nodes.push(n);
+        for (const node of nodes) {
+          const el = node.parentElement;
+          if (!el || el.closest("pre, code, script, style")) continue;
+          const s = node.nodeValue;
+          if (!s || !/\p{Extended_Pictographic}/u.test(s)) continue;
+          node.nodeValue = s
+            .replace(/\p{Extended_Pictographic}/gu, "")
+            .replace(/\uFE0F/g, "")
+            .replace(/\u200D/g, "");
+        }
+      }
+
+      function rewriteMarkdownLinks(scope) {
+        scope.querySelectorAll("a[href]").forEach(function (a) {
+          var h = a.getAttribute("href");
+          if (!h || /^https?:/i.test(h) || h.startsWith("#") || h.startsWith("mailto:")) return;
+          if (!/\.md$/i.test(h)) return;
+          var t = h.replace(/^\.\//, "");
+          if (t.includes("..")) return;
+          if (!t.startsWith("docs/")) t = "docs/" + t.replace(/^\/+/, "");
+          a.setAttribute("href", "viewer.html?p=" + encodeURIComponent(t));
+        });
+      }
+
+      const ok = safePath(p);
+      if (!ok) {
+        viewEl.innerHTML =
+          "<p class='err'>Neplatný odkaz na dokument. Vrať se na přehled a vyber návod znovu.</p>";
+        pathLabel.textContent = "";
+        document.title = "Chyba";
+        return;
+      }
+
+      pathLabel.textContent = ok;
+      document.title = "Načítám…";
+
+      fetch("./" + ok)
+        .then(function (r) {
+          if (!r.ok) throw new Error(String(r.status));
+          return r.text();
+        })
+        .then(function (md) {
+          viewEl.innerHTML = marked.parse(md);
+          rewriteMarkdownLinks(viewEl);
+          stripEmojiTextNodes(viewEl);
+          const h1 = viewEl.querySelector("h1");
+          if (h1 && h1.textContent.trim()) document.title = h1.textContent.trim();
+        })
+        .catch(function () {
+          viewEl.innerHTML =
+            "<p class='err'>Obsah se nepodařilo načíst. Zkus to znovu později.</p>";
+          document.title = "Chyba";
+        });
+    })();
+  </script>
+</body>
+</html>

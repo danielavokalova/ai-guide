@@ -1,4 +1,4 @@
-# 🔍 Style Analyzer — Hloubková analýza stylu psaní
+# Style Analyzer — Hloubková analýza stylu psaní
 
 > **Modul:** Modul 5
 > Analyzuje vaše texty a vytvoří kompletní zadání pro AI copywritera — tak detailní, že jakýkoli AI nástroj bude psát přesně v analyzovaném stylu.

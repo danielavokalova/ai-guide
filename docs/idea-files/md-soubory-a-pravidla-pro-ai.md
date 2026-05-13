@@ -1,4 +1,4 @@
-# 📝 MD soubory a pravidla pro AI
+# MD soubory a pravidla pro AI
 
 > **Modul:** Session 4
 > Jak dát AI pravidla, aby nedělala věci po svém — plan.md, design.md, rules.md.

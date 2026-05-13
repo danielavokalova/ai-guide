@@ -1,4 +1,4 @@
-# 📬 Email Triage Agent
+# Email Triage Agent
 
 > **Modul:** Modul 9
 > AI automaticky třídí inbox, klasifikuje priority a draftuje odpovědi — vy jen schvalujete.

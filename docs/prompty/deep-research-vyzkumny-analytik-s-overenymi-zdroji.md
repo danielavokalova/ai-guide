@@ -1,4 +1,4 @@
-# 🔍 Deep Research — Výzkumný analytik s ověřenými zdroji
+# Deep Research — Výzkumný analytik s ověřenými zdroji
 
 > **Modul:** Modul 2
 > Rychlý research s ověřenými zdroji, konkrétními čísly a značkami spolehlivosti. Na 1–2 strany dostanete strukturovaný přehled na jakékoliv téma.
@@ -13,7 +13,7 @@
 |----------|----------|
 | **ChatGPT** | Vyberte model **Deep Research** (v rozbalovacím menu modelů nahoře) |
 | **Gemini** | Klikněte na **Deep Research** (v pravém panelu nebo pod chatovacím oknem) |
-| **Claude** | Zapněte **Research** (ikona 🔍 v dolním panelu u zprávy) |
+| **Claude** | Zapněte **Research** (ikona v dolním panelu u zprávy) |
 | **Perplexity** | Zapněte **Deep Research** (přepínač vedle search baru, nebo v Pro Search) |
 | **NotebookLM** | Zvolte funkci **Deep Research** |
 | **Copilot** | Vyberte agenta **Researcher / Průzkumník** (v levém menu) |

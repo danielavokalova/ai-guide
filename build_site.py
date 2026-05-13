@@ -5,7 +5,7 @@ Run from repo root: python build_site.py
 
 Optional one-off import (složka musí obsahovat podsložky dokumenty, idea-files, prompty):
 
-  set FAIL_PORTAL_IMPORT=C:\\cesta\\k\\rozbalenemu-zipu
+  set AI_MATERIAL_IMPORT=C:\\cesta\\k\\rozbalenemu-zipu
   python build_site.py --import
 """
 from __future__ import annotations
@@ -92,14 +92,19 @@ def main() -> None:
         "--import",
         dest="do_import",
         action="store_true",
-        help="Copy dokumenty/, idea-files/, prompty/ from FAIL_PORTAL_IMPORT before manifest.",
+        help="Copy dokumenty/, idea-files/, prompty/ from AI_MATERIAL_IMPORT before manifest.",
     )
     args = parser.parse_args()
 
     if args.do_import:
-        root = os.environ.get("FAIL_PORTAL_IMPORT", "").strip()
+        root = (
+            os.environ.get("AI_MATERIAL_IMPORT", "").strip()
+            or os.environ.get("FAIL_PORTAL_IMPORT", "").strip()
+        )
         if not root:
-            raise SystemExit("Set FAIL_PORTAL_IMPORT to the extracted FAIL zip folder.")
+            raise SystemExit(
+                "Set AI_MATERIAL_IMPORT to the extracted zip folder (dokumenty, idea-files, prompty)."
+            )
         do_import(Path(root))
 
     n = write_manifest()

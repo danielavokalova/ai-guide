@@ -1,4 +1,4 @@
-# 💬 Info zpráva pro lidi i AI
+# Info zpráva pro lidi i AI
 
 > **Modul:** Modul 6
 > Filipův prompt z modulu 6 — vezme kontext konverzace a napíše krátkou zprávu, která funguje jak pro člověka, tak pro jeho AI. Plus návod, jak ho nastavit jako klávesovou zkratku na všech platformách.

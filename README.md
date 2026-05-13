@@ -1,32 +1,32 @@
-# FAIL Portal (statický web)
+# AI studijní portál (statický web)
 
-Veřejný přehled materiálů **Future AI Leader 2026** — prompty, idea files a dokumenty. Všechno leží v `docs/`; rozhraní je `index.html` + `manifest.json`.
+Přehled materiálů v `docs/` — dlaždice na `index.html`, každý návod na samostatné stránce `viewer.html?p=…` s tlačítkem **Zpět**.
 
 ## Obsah
 
-- `docs/dokumenty/` — návody (včetně exportu zadání z Wordu `fail-13-3-zadani.md`)
+- `docs/dokumenty/`
 - `docs/idea-files/`
 - `docs/prompty/`
-- `docs/prehled-portal-fail.md` — rejstřík odkazů (převzat z původního README balíčku)
+- `docs/prehled-portal-ai.md` — rejstřík odkazů
 
 ## Obnovení `manifest.json`
-
-Po úpravě Markdownů v `docs/`:
 
 ```powershell
 python build_site.py
 ```
 
-## Jednorázový import ze složky (rozbalený ZIP)
+## Import ze složky (rozbalený ZIP)
 
-Složka musí obsahovat přímo podsložky `dokumenty`, `idea-files`, `prompty`:
+Složka musí obsahovat `dokumenty`, `idea-files`, `prompty`:
 
 ```powershell
-$env:FAIL_PORTAL_IMPORT = "C:\cesta\k\rozbalenemu-zipu"
+$env:AI_MATERIAL_IMPORT = "C:\cesta\k\rozbalenemu-zipu"
 python build_site.py --import
 ```
 
-Pak zkontroluj `docs/`, případně doplněné soubory (např. export z Wordu), znovu spusť `python build_site.py` bez `--import` a commitni.
+(Podporováno je i dřívější název proměnné prostředí pro import — viz `build_site.py`.)
+
+Pak znovu `python build_site.py` a commit.
 
 ## Publikace
 

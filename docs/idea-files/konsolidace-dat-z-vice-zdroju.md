@@ -1,4 +1,4 @@
-# 🔗 Konsolidace dat z více zdrojů
+# Konsolidace dat z více zdrojů
 
 > **Modul:** Modul 8
 > AI sjednotí formáty, odstraní duplicity a propojí záznamy z různých systémů.
@@ -113,11 +113,11 @@ Sjednocená data v jednom souboru nebo na jednom místě:
 ### Operace 3: Automatizovaná pipeline (code)
 
 1. AI napíše skript, který:
-   - Načte exporty ze definovaných složek
-   - Normalizuje formáty
-   - Propojí přes definované klíče
-   - Odstraní duplicity
-   - Uloží čistý výstup
+ - Načte exporty ze definovaných složek
+ - Normalizuje formáty
+ - Propojí přes definované klíče
+ - Odstraní duplicity
+ - Uloží čistý výstup
 2. Příští měsíc: nové exporty → spustíš skript → hotovo
 
 ### Operace 4: Přidání nového zdroje

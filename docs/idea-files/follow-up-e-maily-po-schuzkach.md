@@ -1,4 +1,4 @@
-# 📧 Follow-up e-maily po schůzkách
+# Follow-up e-maily po schůzkách
 
 > **Modul:** Modul 5
 > Po každé schůzce rychle pošlete follow-up e-mail — automaticky, ve svém stylu.

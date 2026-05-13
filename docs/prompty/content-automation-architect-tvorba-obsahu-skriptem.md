@@ -1,4 +1,4 @@
-# ⚡ Content Automation Architect — Tvorba obsahu skriptem
+# Content Automation Architect — Tvorba obsahu skriptem
 
 > **Modul:** Modul 5
 > Průvodce od nápadu k hotovému workflow: zjistí co chcete tvořit, doporučí API, navede na klíč a vytvoří Idea File pro váš coding nástroj.

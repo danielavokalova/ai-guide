@@ -1,4 +1,4 @@
-# ⚡ Batch Intelligence — hromadné zpracování
+# Batch Intelligence — hromadné zpracování
 
 > **Modul:** Modul 8
 > Systém projde stovky položek podle vašich pravidel a dá souhrnný výstup.

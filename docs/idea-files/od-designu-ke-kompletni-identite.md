@@ -1,4 +1,4 @@
-# 💎 Od designu ke kompletní identitě
+# Od designu ke kompletní identitě
 
 > **Modul:** Modul 5
 > Z jednoho vizuálního návrhu vytvořte kompletní brand — grafiku, video, hudbu.

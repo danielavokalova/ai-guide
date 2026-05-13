@@ -1,4 +1,4 @@
-# 📊 Data → Interaktivní report
+# Data → Interaktivní report
 
 > **Modul:** Modul 8
 > Z jakýchkoli dat vytvoříte interaktivní HTML report s grafy a přehlednou hierarchií.

@@ -1,4 +1,4 @@
-# 💻 Panel expertů — verze pro code / cowork nástroje
+# Panel expertů — verze pro code / cowork nástroje
 
 > **Modul:** Modul 4
 > Varianta pro nástroje, které umí pracovat s lokálními soubory, dokumenty a kontextem projektu.

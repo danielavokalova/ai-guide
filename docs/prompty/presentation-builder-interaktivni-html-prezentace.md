@@ -1,4 +1,4 @@
-# 📊 Presentation Builder — Interaktivní HTML prezentace
+# Presentation Builder — Interaktivní HTML prezentace
 
 > **Modul:** Modul 5
 > Z jakéhokoliv textu vytvoří kompletní interaktivní HTML prezentaci — jeden soubor s navigací, fullscreenem a tiskem do PDF.

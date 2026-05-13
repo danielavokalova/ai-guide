@@ -1,4 +1,4 @@
-# 💡 Idea File Creator — Sdílení myšlenek přes AI
+# Idea File Creator — Sdílení myšlenek přes AI
 
 > **Modul:** Modul 5
 > Vytvoří 'Idea File' — markdown dokument, který komunikuje vaši myšlenku tak, aby si ho kdokoli hodil do AI a ta mu pomohla myšlenku realizovat.

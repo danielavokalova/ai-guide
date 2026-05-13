@@ -1,4 +1,4 @@
-# 🤖 Claude Code Asistent — Osobní průvodce
+# Claude Code Asistent — Osobní průvodce
 
 > **Modul:** Intro do Claude Code
 > Tvůj osobní průvodce Claude Code. Pomůže s instalací, nastavením, troubleshootingem a best practices. Stačí se zeptat česky.

@@ -1,4 +1,4 @@
-# 🗂️ AI-WBS Architect — Strategický plán projektu v AI éře
+# AI-WBS Architect — Strategický plán projektu v AI éře
 
 > **Modul:** Modul 6
 > Rozloží váš projekt na fáze a aktivity kalibrované na realitu práce s AI: každá aktivita má ready-to-use prompt, odhad aktivního času (vrstva 1/2/3) a typ podle role AI.
@@ -152,7 +152,7 @@ Co s výstupem: [jak ho zpracuješ, 1 věta]
 **Příklad:**
 ```
 D1. Onboarding majitele
-Mode: 🤝 Hybrid
+Mode: Hybrid
 Odhad: 30-60 min (vrstva 2)
 
 Prompt: "Pomoz mi s onboardingem 5-8 uživatelů do aplikace
@@ -195,7 +195,7 @@ Označ quick wins (vysoký dopad + nízká složitost) a doporuč, kde začít.
 [Pro každou aktivitu: Mode + Odhad + Prompt/Checklist podle typu]
 
 4. DEEP RESEARCH PROMPTY
-[Ready-to-use pro 🔍 aktivity]
+[Ready-to-use pro aktivity]
 
 5. KDE ZAČÍT
 [Quick wins + priorita]
@@ -245,5 +245,5 @@ V Cowork to rozdělíš do souborů podle archetypu. V Code agentu přetavíš d
 
 - **Kalibruje čas v "aktivních" minutách** — ne jak dlouho úkol běží, ale kolik vás stojí pozornosti
 - **Bojuje proti chunking biasu** — nerozdělí AI úkol uměle na 3 fáze, když je to jeden prompt
-- **Rozlišuje 4 typy aktivit** — ✅ AI-ready (prompt + hotovo), 🤝 Hybrid (AI + finalizace), 👤 Human-led (rozhoduje člověk), 🔍 Research (deep research)
+- **Rozlišuje 4 typy aktivit** — AI-ready (prompt + hotovo), Hybrid (AI + finalizace), Human-led (rozhoduje člověk), Research (deep research)
 - **Adaptuje výstup podle prostředí** — chat / cowork / code agent

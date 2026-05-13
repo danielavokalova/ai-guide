@@ -1,4 +1,4 @@
-# 🔒 Zabezpečte svou vibe-coded aplikaci
+# Zabezpečte svou vibe-coded aplikaci
 
 > **Modul:** Session 4
 > Přihlašování a ochrana dat — RLS, autentizace a bezpečnostní checklist.

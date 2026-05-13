@@ -1,4 +1,4 @@
-# 📋 Custom Instructions — Naučte AI, kdo jste
+# Custom Instructions — Naučte AI, kdo jste
 
 > **Modul:** Modul 1
 > Návod jak nastavit Custom Instructions v ChatGPT, Claude a Gemini. Jednorázová investice 15 minut, která zlepší každou budoucí interakci s AI.

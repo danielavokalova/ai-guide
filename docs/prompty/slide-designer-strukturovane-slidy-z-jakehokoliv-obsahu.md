@@ -1,4 +1,4 @@
-# 🎨 Slide Designer — Strukturované slidy z jakéhokoliv obsahu
+# Slide Designer — Strukturované slidy z jakéhokoliv obsahu
 
 > **Modul:** Modul 5
 > Převede poznámky, texty nebo body na profesionální strukturu prezentace s 14 typy slidů, vizuálními poznámkami a volbou light/dark módu.

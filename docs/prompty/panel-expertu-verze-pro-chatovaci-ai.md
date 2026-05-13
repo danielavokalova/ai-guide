@@ -1,4 +1,4 @@
-# 💬 Panel expertů — verze pro chatovací AI
+# Panel expertů — verze pro chatovací AI
 
 > **Modul:** Modul 4
 > Varianta pro běžné chaty bez přístupu k lokálním souborům a bez trvalého kontextu.

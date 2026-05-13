@@ -1,4 +1,4 @@
-# 🧭 Jak Designovat AI Automatizaci
+# Jak Designovat AI Automatizaci
 
 > **Modul:** Modul 9
 > Rozhodovací framework: kdy uložený prompt, kdy orchestrace, kdy vibe coding.

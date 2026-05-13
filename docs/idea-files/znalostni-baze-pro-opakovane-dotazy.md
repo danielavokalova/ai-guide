@@ -1,4 +1,4 @@
-# 🧠 Znalostní báze pro opakované dotazy
+# Znalostní báze pro opakované dotazy
 
 > **Modul:** Modul 5
 > AI systém, který odpovídá na opakované dotazy ve vašem stylu a učí se z oprav.

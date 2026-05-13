@@ -1,4 +1,4 @@
-# 🔍 Smart Extract — data z dokumentů
+# Smart Extract — data z dokumentů
 
 > **Modul:** Modul 8
 > Definujete schéma, AI extrahuje přesně to, co chcete ze smluv, faktur nebo zápisů.
@@ -30,8 +30,8 @@ Obojí je neefektivní.
 
 Rozdíl:
 
-- ❌ "Shrň mi tuhle smlouvu" → 5 odstavců volného textu
-- ✅ "Z této smlouvy vytáhni: strany, předmět, částka, datum podpisu, výpovědní lhůta, sankce" → tabulka s konkrétními hodnotami
+- "Shrň mi tuhle smlouvu" → 5 odstavců volného textu
+- "Z této smlouvy vytáhni: strany, předmět, částka, datum podpisu, výpovědní lhůta, sankce" → tabulka s konkrétními hodnotami
 
 Schema-first přístup znamená: nejdřív řekneš CO chceš, pak dáš AI dokument. Ne naopak.
 

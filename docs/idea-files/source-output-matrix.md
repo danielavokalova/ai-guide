@@ -1,4 +1,4 @@
-# 🔀 Source → Output Matrix
+# Source → Output Matrix
 
 > **Modul:** Modul 9
 > Jeden zdroj, maximální hodnota. Systém, který z jednoho vstupu vytvoří 5–15 výstupů.

@@ -1,4 +1,4 @@
-# 📊 Batch Processing bez kódu
+# Batch Processing bez kódu
 
 > **Modul:** Modul 9
 > Zpracujte 50–500 položek jedním promptem — přímo v Google Sheets nebo Excelu.
@@ -54,9 +54,9 @@ Většina lidí zpracovává data po jednom — kopíruje řádek do ChatGPT, č
 
 - Jeden jasný prompt per sloupec výstupu
 - Příklady promptů:
-  - "Shrň tento feedback jednou větou" → Sloupec B
-  - "Klasifikuj sentiment: Positive / Negative / Neutral" → Sloupec C
-  - "Extrahuj akční položky, vrať prázdné pokud žádné" → Sloupec D
+ - "Shrň tento feedback jednou větou" → Sloupec B
+ - "Klasifikuj sentiment: Positive / Negative / Neutral" → Sloupec C
+ - "Extrahuj akční položky, vrať prázdné pokud žádné" → Sloupec D
 
 ### Vrstva 3: Test → Feedback → Scale
 

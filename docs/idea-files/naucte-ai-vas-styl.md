@@ -1,4 +1,4 @@
-# ✍️ Naučte AI váš styl
+# Naučte AI váš styl
 
 > **Modul:** Modul 5
 > AI generuje obsah (e-maily, prezentace, posty), který zní přesně jako vy.

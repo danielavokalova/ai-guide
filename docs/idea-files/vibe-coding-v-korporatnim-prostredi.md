@@ -1,4 +1,4 @@
-# 🏢 Vibe coding v korporátním prostředí
+# Vibe coding v korporátním prostředí
 
 > **Modul:** Session 4
 > Jak prosadit vibe coding ve velké firmě — argumenty pro IT/management a bezpečný sandbox.

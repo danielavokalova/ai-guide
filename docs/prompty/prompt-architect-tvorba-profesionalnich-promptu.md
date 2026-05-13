@@ -1,4 +1,4 @@
-# ✏️ Prompt Architect — Tvorba profesionálních promptů
+# Prompt Architect — Tvorba profesionálních promptů
 
 > **Modul:** Modul 1
 > Univerzální framework pro vytváření efektivních promptů pro jakýkoliv úkol. Promění vágní požadavek na precizní instrukci, která z AI vytáhne maximum.

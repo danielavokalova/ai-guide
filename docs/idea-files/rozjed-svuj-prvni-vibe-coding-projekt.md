@@ -1,4 +1,4 @@
-# 🚀 Rozjeď svůj první vibe coding projekt
+# Rozjeď svůj první vibe coding projekt
 
 > **Modul:** Session 4
 > Kompletní nastavení GitHub + Supabase + Vercel — tři nástroje, aby projekt běžel na internetu.

@@ -1,4 +1,4 @@
-# 🛠️ Stavím interní nástroj pro svůj tým
+# Stavím interní nástroj pro svůj tým
 
 > **Modul:** Session 4
 > Od nápadu po nasazení — jak s AI vytvořit aplikaci, která nahradí Excel nebo ruční proces.
@@ -25,7 +25,7 @@ Based on answers, help identify the right scope, suggest architecture, and guide
 
 **Největší příležitost vibe codingu nejsou weby — jsou to interní nástroje.** Každý tým má procesy přes Excel, emaily nebo "zavolej Petrovi". AI vám umožní za jedno odpoledne postavit aplikaci na míru.
 
-Příklady z FAIL:
+Příklady z AI:
 - Vladka: knihovna promptů a vzdělávacích materiálů pro zaměstnance
 - Jindra: správa účtenek s OCR + Telegram bot + export pro účetního
 - Honza: health dashboard z Oura Ring dat

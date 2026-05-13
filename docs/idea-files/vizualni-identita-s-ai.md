@@ -1,4 +1,4 @@
-# 🎨 Vizuální identita s AI
+# Vizuální identita s AI
 
 > **Modul:** Modul 5
 > Vytvořte vizuální identitu pro projekt — od brainstormingu přes generování návrhů po finální výběr.

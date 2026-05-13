@@ -1,11 +1,11 @@
-# ⚡ Power Hour — Postav cokoliv za hodinu
+# Power Hour — Postav cokoliv za hodinu
 
 > **Modul:** Modul 1
 > Metodika tří kroků: Research → Design → Build. Vezmi si hodinu, sedni si s AI a dotáhni jednu věc. Včetně startovacích promptů.
 
 ---
 
-# ⚡ Power Hour
+# Power Hour
 
 **Jak s AI postavit cokoliv za jednu hodinu.**
 

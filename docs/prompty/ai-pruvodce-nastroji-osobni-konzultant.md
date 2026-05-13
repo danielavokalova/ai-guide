@@ -1,4 +1,4 @@
-# 🧭 AI Průvodce nástroji — Osobní konzultant
+# AI Průvodce nástroji — Osobní konzultant
 
 > **Modul:** Modul 1
 > Váš osobní poradce pro práci s AI nástroji. Poradí, který nástroj použít, provede vás krok za krokem, vyřeší problémy a doporučí nejlepší postupy.

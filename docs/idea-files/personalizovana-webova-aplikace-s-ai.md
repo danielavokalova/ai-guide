@@ -1,4 +1,4 @@
-# 🌐 Personalizovaná webová aplikace s AI
+# Personalizovaná webová aplikace s AI
 
 > **Modul:** Modul 5
 > Webová aplikace, která z vstupních dat generuje personalizovaný výstup.

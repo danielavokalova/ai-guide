@@ -1,4 +1,4 @@
-# ⚡ Batch Processing s kódem
+# Batch Processing s kódem
 
 > **Modul:** Modul 9
 > 500 souborů, 200 dokumentů, nebo celou databázi? Nechte AI napsat script — vy jen popíšete, co chcete.

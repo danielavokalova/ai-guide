@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FAIL Portal</title>
-  <meta name="description" content="FAIL Portal — Future AI Leader 2026, materiály na tomto webu." />
+  <title>AI studijní portál</title>
+  <meta name="description" content="Prompty, idea files a návody — přehledný studijní portál." />
   <meta name="color-scheme" content="dark light" />
   <style>
     :root {
@@ -65,25 +65,19 @@
       margin: 0 auto;
       padding: 1.75rem clamp(1rem, 4vw, 2.5rem) 2.5rem;
     }
-    .section {
-      margin-bottom: 2.35rem;
-    }
-    .section:last-of-type {
-      margin-bottom: 0;
-    }
+    .section { margin-bottom: 2.35rem; }
     .section-head {
       font-size: 1.35rem;
       font-weight: 650;
       margin: 0 0 1rem;
       letter-spacing: -0.02em;
-      color: var(--text);
     }
     .tile-grid {
       display: grid;
       gap: 0.9rem;
       grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
     }
-    .tile {
+    a.tile {
       display: block;
       width: 100%;
       text-align: left;
@@ -95,95 +89,37 @@
       font-size: 1.08rem;
       line-height: 1.38;
       font-family: inherit;
+      text-decoration: none;
       cursor: pointer;
       transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
     }
-    .tile:hover {
+    a.tile:hover {
       border-color: var(--accent-dim);
       background: #1f2a3d;
     }
-    .tile.active {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 1px var(--accent);
-      background: #1e2d42;
+    a.tile:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
     }
     .tail-block {
       margin-top: 2.75rem;
       padding-top: 2.25rem;
       border-top: 1px solid var(--border);
     }
-    .reader-wrap {
-      margin-top: 2.5rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border);
-    }
-    .doc-meta {
-      font-size: 0.98rem;
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-    .content { font-size: 1.07rem; max-width: 72ch; }
-    .content :is(h1, h2, h3) { margin-top: 1.35rem; margin-bottom: 0.5rem; }
-    .content h1 {
-      font-size: 1.75rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.4rem;
-    }
-    .content h2 { font-size: 1.35rem; }
-    .content h3 { font-size: 1.15rem; }
-    .content a { color: var(--accent); }
-    .content code {
-      background: var(--bg-elev);
-      padding: 0.12rem 0.35rem;
-      border-radius: 4px;
-      font-size: 0.92em;
-    }
-    .content pre {
-      background: var(--bg-elev);
-      padding: 1rem;
-      border-radius: var(--radius);
-      overflow: auto;
-      border: 1px solid var(--border);
-      font-size: 0.95em;
-    }
-    .content pre code { background: none; padding: 0; }
-    .content img,
-    .content picture,
-    .content svg[role="img"] {
-      display: none !important;
-    }
-    .empty { color: var(--muted); font-style: italic; }
-    footer {
-      padding: 1.1rem;
-      text-align: center;
-      font-size: 0.92rem;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-    }
   </style>
 </head>
 <body>
   <header>
-    <h1>FAIL Portal</h1>
-    <p>Future AI Leader 2026 — prompty, idea files a návody. Vyhledávání podle názvu.</p>
+    <h1>AI studijní portál</h1>
+    <p>Prompty, idea files a návody. Kliknutím otevřeš samostatnou stránku s návodem.</p>
     <input type="search" class="search" id="q" placeholder="Hledat v názvech…" autocomplete="off" />
   </header>
   <div class="page">
     <div id="sections"></div>
-    <div class="reader-wrap">
-      <div id="meta" class="doc-meta"></div>
-      <article id="view" class="content">
-        <p class="empty">Vyberte článek kliknutím na dlaždici.</p>
-      </article>
-    </div>
   </div>
-  <footer>FAIL Portal · Future AI Leader 2026</footer>
-  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
   <script>
     (async function () {
       const sectionsEl = document.getElementById("sections");
-      const viewEl = document.getElementById("view");
-      const metaEl = document.getElementById("meta");
       const qEl = document.getElementById("q");
 
       const TAIL_IDS = new Set([
@@ -205,7 +141,7 @@
 
       const res = await fetch("manifest.json");
       if (!res.ok) {
-        viewEl.innerHTML = "<p>Nepodařilo se načíst manifest.json.</p>";
+        sectionsEl.innerHTML = "<p>Nepodařilo se načíst manifest.json.</p>";
         return;
       }
       const data = await res.json();
@@ -255,31 +191,12 @@
         return a.localeCompare(b, "cs");
       }
 
-      let activeBtn = null;
-      let hasAutoLoaded = false;
-
-      async function loadDoc(art, btn) {
-        if (activeBtn) activeBtn.classList.remove("active");
-        if (btn) {
-          activeBtn = btn;
-          btn.classList.add("active");
-        }
-        metaEl.textContent =
-          (art.categoryLabel || "") + " · " + displayTitle(art);
-        viewEl.innerHTML = "<p class='empty'>Načítám…</p>";
-        const r = await fetch(art.path);
-        const md = await r.text();
-        viewEl.innerHTML = marked.parse(md);
-      }
-
       function makeTile(art) {
-        const b = document.createElement("button");
-        b.type = "button";
-        b.className = "tile";
-        b.textContent = displayTitle(art);
-        b.dataset.path = art.path;
-        b.addEventListener("click", () => loadDoc(art, b));
-        return b;
+        const a = document.createElement("a");
+        a.className = "tile";
+        a.href = "viewer.html?p=" + encodeURIComponent(art.path);
+        a.textContent = displayTitle(art);
+        return a;
       }
 
       function renderSection(container, label, arts) {
@@ -292,13 +209,12 @@
         sec.appendChild(h);
         const grid = document.createElement("div");
         grid.className = "tile-grid";
-        for (const a of arts) grid.appendChild(makeTile(a));
+        for (const x of arts) grid.appendChild(makeTile(x));
         sec.appendChild(grid);
         container.appendChild(sec);
       }
 
       function repaint() {
-        activeBtn = null;
         const needle = qEl.value.trim().toLowerCase();
         const filtered = needle
           ? articles.filter(
@@ -313,9 +229,7 @@
 
         sectionsEl.innerHTML = "";
         const labels = Object.keys(groups).sort(sortSectionLabel);
-        for (const label of labels) {
-          renderSection(sectionsEl, label, groups[label]);
-        }
+        for (const label of labels) renderSection(sectionsEl, label, groups[label]);
 
         if (tail.length) {
           const wrap = document.createElement("div");
@@ -323,24 +237,9 @@
           renderSection(wrap, "Osobní & briefing", tail);
           sectionsEl.appendChild(wrap);
         }
-
-        if (!needle && filtered.length && !hasAutoLoaded) {
-          const firstBtn = sectionsEl.querySelector(".tile");
-          if (firstBtn) {
-            const path = firstBtn.dataset.path;
-            const art = articles.find((x) => x.path === path);
-            if (art) {
-              hasAutoLoaded = true;
-              loadDoc(art, firstBtn);
-            }
-          }
-        }
       }
 
-      qEl.addEventListener("input", () => {
-        hasAutoLoaded = true;
-        repaint();
-      });
+      qEl.addEventListener("input", repaint);
       repaint();
     })();
   </script>

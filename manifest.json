@@ -1,303 +1,303 @@
 {
   "articles": [
     {
-      "id": "dokumenty/fail-13-3-zadani",
-      "path": "docs/dokumenty/fail-13-3-zadani.md",
-      "title": "FAIL 13.3 — zadání (export z Wordu)",
+      "id": "dokumenty/ai-13-3-zadani",
+      "path": "docs/dokumenty/ai-13-3-zadani.md",
+      "title": "AI 13.3 — zadání (export z Wordu)",
       "category": "dokumenty",
       "categoryLabel": "Dokumenty & návody"
     },
     {
       "id": "dokumenty/lno-framework-jak-na-priority",
       "path": "docs/dokumenty/lno-framework-jak-na-priority.md",
-      "title": "🎯 LNO Framework — Jak na priority",
+      "title": "LNO Framework — Jak na priority",
       "category": "dokumenty",
       "categoryLabel": "Dokumenty & návody"
     },
     {
       "id": "dokumenty/power-hour-postav-cokoliv-za-hodinu",
       "path": "docs/dokumenty/power-hour-postav-cokoliv-za-hodinu.md",
-      "title": "⚡ Power Hour — Postav cokoliv za hodinu",
+      "title": "Power Hour — Postav cokoliv za hodinu",
       "category": "dokumenty",
       "categoryLabel": "Dokumenty & návody"
     },
     {
       "id": "dokumenty/pruvodce-adopci-ai-ve-firme",
       "path": "docs/dokumenty/pruvodce-adopci-ai-ve-firme.md",
-      "title": "🏢 Průvodce adopcí AI ve firmě",
+      "title": "Průvodce adopcí AI ve firmě",
       "category": "dokumenty",
       "categoryLabel": "Dokumenty & návody"
     },
     {
       "id": "idea-files/batch-intelligence-hromadne-zpracovani",
       "path": "docs/idea-files/batch-intelligence-hromadne-zpracovani.md",
-      "title": "⚡ Batch Intelligence — hromadné zpracování",
+      "title": "Batch Intelligence — hromadné zpracování",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/batch-processing-bez-kodu",
       "path": "docs/idea-files/batch-processing-bez-kodu.md",
-      "title": "📊 Batch Processing bez kódu",
+      "title": "Batch Processing bez kódu",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/batch-processing-s-kodem",
       "path": "docs/idea-files/batch-processing-s-kodem.md",
-      "title": "⚡ Batch Processing s kódem",
+      "title": "Batch Processing s kódem",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/data-interaktivni-report",
       "path": "docs/idea-files/data-interaktivni-report.md",
-      "title": "📊 Data → Interaktivní report",
+      "title": "Data → Interaktivní report",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/e-maily-s-insighty-z-dokumentu",
       "path": "docs/idea-files/e-maily-s-insighty-z-dokumentu.md",
-      "title": "📑 E-maily s insighty z dokumentů",
+      "title": "E-maily s insighty z dokumentů",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/email-triage-agent",
       "path": "docs/idea-files/email-triage-agent.md",
-      "title": "📬 Email Triage Agent",
+      "title": "Email Triage Agent",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/follow-up-e-maily-po-schuzkach",
       "path": "docs/idea-files/follow-up-e-maily-po-schuzkach.md",
-      "title": "📧 Follow-up e-maily po schůzkách",
+      "title": "Follow-up e-maily po schůzkách",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/jak-designovat-ai-automatizaci",
       "path": "docs/idea-files/jak-designovat-ai-automatizaci.md",
-      "title": "🧭 Jak Designovat AI Automatizaci",
+      "title": "Jak Designovat AI Automatizaci",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/konsolidace-dat-z-vice-zdroju",
       "path": "docs/idea-files/konsolidace-dat-z-vice-zdroju.md",
-      "title": "🔗 Konsolidace dat z více zdrojů",
+      "title": "Konsolidace dat z více zdrojů",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/md-soubory-a-pravidla-pro-ai",
       "path": "docs/idea-files/md-soubory-a-pravidla-pro-ai.md",
-      "title": "📝 MD soubory a pravidla pro AI",
+      "title": "MD soubory a pravidla pro AI",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/naucte-ai-vas-styl",
       "path": "docs/idea-files/naucte-ai-vas-styl.md",
-      "title": "✍️ Naučte AI váš styl",
+      "title": "Naučte AI váš styl",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/od-designu-ke-kompletni-identite",
       "path": "docs/idea-files/od-designu-ke-kompletni-identite.md",
-      "title": "💎 Od designu ke kompletní identitě",
+      "title": "Od designu ke kompletní identitě",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/od-prototypu-k-produkci",
       "path": "docs/idea-files/od-prototypu-k-produkci.md",
-      "title": "🎯 Od prototypu k produkci",
+      "title": "Od prototypu k produkci",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/osobni-ai-briefing",
       "path": "docs/idea-files/osobni-ai-briefing.md",
-      "title": "☀️ Osobní AI Briefing",
+      "title": "Osobní AI Briefing",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/personalizovana-webova-aplikace-s-ai",
       "path": "docs/idea-files/personalizovana-webova-aplikace-s-ai.md",
-      "title": "🌐 Personalizovaná webová aplikace s AI",
+      "title": "Personalizovaná webová aplikace s AI",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/rozjed-svuj-prvni-vibe-coding-projekt",
       "path": "docs/idea-files/rozjed-svuj-prvni-vibe-coding-projekt.md",
-      "title": "🚀 Rozjeď svůj první vibe coding projekt",
+      "title": "Rozjeď svůj první vibe coding projekt",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/smart-extract-data-z-dokumentu",
       "path": "docs/idea-files/smart-extract-data-z-dokumentu.md",
-      "title": "🔍 Smart Extract — data z dokumentů",
+      "title": "Smart Extract — data z dokumentů",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/source-output-matrix",
       "path": "docs/idea-files/source-output-matrix.md",
-      "title": "🔀 Source → Output Matrix",
+      "title": "Source → Output Matrix",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/stavim-interni-nastroj-pro-svuj-tym",
       "path": "docs/idea-files/stavim-interni-nastroj-pro-svuj-tym.md",
-      "title": "🛠️ Stavím interní nástroj pro svůj tým",
+      "title": "Stavím interní nástroj pro svůj tým",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/vibe-coding-v-korporatnim-prostredi",
       "path": "docs/idea-files/vibe-coding-v-korporatnim-prostredi.md",
-      "title": "🏢 Vibe coding v korporátním prostředí",
+      "title": "Vibe coding v korporátním prostředí",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/vizualni-identita-s-ai",
       "path": "docs/idea-files/vizualni-identita-s-ai.md",
-      "title": "🎨 Vizuální identita s AI",
+      "title": "Vizuální identita s AI",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/zabezpecte-svou-vibe-coded-aplikaci",
       "path": "docs/idea-files/zabezpecte-svou-vibe-coded-aplikaci.md",
-      "title": "🔒 Zabezpečte svou vibe-coded aplikaci",
+      "title": "Zabezpečte svou vibe-coded aplikaci",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
       "id": "idea-files/znalostni-baze-pro-opakovane-dotazy",
       "path": "docs/idea-files/znalostni-baze-pro-opakovane-dotazy.md",
-      "title": "🧠 Znalostní báze pro opakované dotazy",
+      "title": "Znalostní báze pro opakované dotazy",
       "category": "idea-files",
       "categoryLabel": "Idea files"
     },
     {
-      "id": "prehled-portal-fail",
-      "path": "docs/prehled-portal-fail.md",
-      "title": "Top prompty a návody — FAIL Portal",
+      "id": "prehled-portal-ai",
+      "path": "docs/prehled-portal-ai.md",
+      "title": "Top prompty a návody",
       "category": "prehled",
       "categoryLabel": "Přehled portálu"
     },
     {
       "id": "prompty/ai-pruvodce-nastroji-osobni-konzultant",
       "path": "docs/prompty/ai-pruvodce-nastroji-osobni-konzultant.md",
-      "title": "🧭 AI Průvodce nástroji — Osobní konzultant",
+      "title": "AI Průvodce nástroji — Osobní konzultant",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/ai-wbs-architect-strategicky-plan-projektu-v-ai-ere",
       "path": "docs/prompty/ai-wbs-architect-strategicky-plan-projektu-v-ai-ere.md",
-      "title": "🗂️ AI-WBS Architect — Strategický plán projektu v AI éře",
+      "title": "AI-WBS Architect — Strategický plán projektu v AI éře",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/claude-code-asistent-osobni-pruvodce",
       "path": "docs/prompty/claude-code-asistent-osobni-pruvodce.md",
-      "title": "🤖 Claude Code Asistent — Osobní průvodce",
+      "title": "Claude Code Asistent — Osobní průvodce",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/content-automation-architect-tvorba-obsahu-skriptem",
       "path": "docs/prompty/content-automation-architect-tvorba-obsahu-skriptem.md",
-      "title": "⚡ Content Automation Architect — Tvorba obsahu skriptem",
+      "title": "Content Automation Architect — Tvorba obsahu skriptem",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/custom-instructions-naucte-ai-kdo-jste",
       "path": "docs/prompty/custom-instructions-naucte-ai-kdo-jste.md",
-      "title": "📋 Custom Instructions — Naučte AI, kdo jste",
+      "title": "Custom Instructions — Naučte AI, kdo jste",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/deep-research-vyzkumny-analytik-s-overenymi-zdroji",
       "path": "docs/prompty/deep-research-vyzkumny-analytik-s-overenymi-zdroji.md",
-      "title": "🔍 Deep Research — Výzkumný analytik s ověřenými zdroji",
+      "title": "Deep Research — Výzkumný analytik s ověřenými zdroji",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/idea-file-creator-sdileni-myslenek-pres-ai",
       "path": "docs/prompty/idea-file-creator-sdileni-myslenek-pres-ai.md",
-      "title": "💡 Idea File Creator — Sdílení myšlenek přes AI",
+      "title": "Idea File Creator — Sdílení myšlenek přes AI",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/info-zprava-pro-lidi-i-ai",
       "path": "docs/prompty/info-zprava-pro-lidi-i-ai.md",
-      "title": "💬 Info zpráva pro lidi i AI",
+      "title": "Info zpráva pro lidi i AI",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/panel-expertu-verze-pro-chatovaci-ai",
       "path": "docs/prompty/panel-expertu-verze-pro-chatovaci-ai.md",
-      "title": "💬 Panel expertů — verze pro chatovací AI",
+      "title": "Panel expertů — verze pro chatovací AI",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/panel-expertu-verze-pro-code-cowork-nastroje",
       "path": "docs/prompty/panel-expertu-verze-pro-code-cowork-nastroje.md",
-      "title": "💻 Panel expertů — verze pro code / cowork nástroje",
+      "title": "Panel expertů — verze pro code / cowork nástroje",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/prd-creator-rychly-generator-produktoveho-zadani",
       "path": "docs/prompty/prd-creator-rychly-generator-produktoveho-zadani.md",
-      "title": "🏗️ PRD Creator — Rychlý generátor produktového zadání",
+      "title": "PRD Creator — Rychlý generátor produktového zadání",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/presentation-builder-interaktivni-html-prezentace",
       "path": "docs/prompty/presentation-builder-interaktivni-html-prezentace.md",
-      "title": "📊 Presentation Builder — Interaktivní HTML prezentace",
+      "title": "Presentation Builder — Interaktivní HTML prezentace",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/prompt-architect-tvorba-profesionalnich-promptu",
       "path": "docs/prompty/prompt-architect-tvorba-profesionalnich-promptu.md",
-      "title": "✏️ Prompt Architect — Tvorba profesionálních promptů",
+      "title": "Prompt Architect — Tvorba profesionálních promptů",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/slide-designer-strukturovane-slidy-z-jakehokoliv-obsahu",
       "path": "docs/prompty/slide-designer-strukturovane-slidy-z-jakehokoliv-obsahu.md",
-      "title": "🎨 Slide Designer — Strukturované slidy z jakéhokoliv obsahu",
+      "title": "Slide Designer — Strukturované slidy z jakéhokoliv obsahu",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     },
     {
       "id": "prompty/style-analyzer-hloubkova-analyza-stylu-psani",
       "path": "docs/prompty/style-analyzer-hloubkova-analyza-stylu-psani.md",
-      "title": "🔍 Style Analyzer — Hloubková analýza stylu psaní",
+      "title": "Style Analyzer — Hloubková analýza stylu psaní",
       "category": "prompty",
       "categoryLabel": "Prompty & šablony"
     }

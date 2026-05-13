@@ -1,4 +1,4 @@
-# ☀️ Osobní AI Briefing
+# Osobní AI Briefing
 
 > **Modul:** Modul 9
 > AI vám pravidelně připraví přehled toho, co potřebujete vědět — z vašich zdrojů, ve vašem formátu.

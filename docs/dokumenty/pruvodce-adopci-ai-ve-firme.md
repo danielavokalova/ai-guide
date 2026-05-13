@@ -1,4 +1,4 @@
-# 🏢 Průvodce adopcí AI ve firmě
+# Průvodce adopcí AI ve firmě
 
 > **Modul:** Modul 1
 > Praktický průvodce pro zavedení AI ve firmě. Tři pilíře adopce: projekty, vzdělávání, sdílení. Včetně příkladů z firem jako Shopify, Box, Duolingo a Zapier.
@@ -69,7 +69,7 @@ Napříč všemi příklady se opakuje **6 principů**:
 
 ### Shopify
 
-> 🔗 [Tobias Lütke — interní memo](https://x.com/tobi/status/1909251946235437514)
+> [Tobias Lütke — interní memo](https://x.com/tobi/status/1909251946235437514)
 
 | # | Princip |
 |---|---------|
@@ -86,7 +86,7 @@ Napříč všemi příklady se opakuje **6 principů**:
 
 ### Box
 
-> 🔗 [Aaron Levie — LinkedIn](https://www.linkedin.com/posts/boxaaron_at-box-we-are-focused-on-building-an-ai-first-activity-7323454310032232449-Jy_O)
+> [Aaron Levie — LinkedIn](https://www.linkedin.com/posts/boxaaron_at-box-we-are-focused-on-building-an-ai-first-activity-7323454310032232449-Jy_O)
 
 | # | Princip |
 |---|---------|
@@ -103,7 +103,7 @@ Napříč všemi příklady se opakuje **6 principů**:
 
 ### Duolingo
 
-> 🔗 [Natalie Glance — interní komunikace Engineering týmu](https://www.linkedin.com/posts/nglance_engineering-ai-activity-7322657005800759297-QhRI)
+> [Natalie Glance — interní komunikace Engineering týmu](https://www.linkedin.com/posts/nglance_engineering-ai-activity-7322657005800759297-QhRI)
 
 | # | Princip |
 |---|---------|
@@ -121,7 +121,7 @@ Napříč všemi příklady se opakuje **6 principů**:
 
 ### Zapier
 
-> 🔗 [Jak Zapier dosáhl 97% adopce AI](https://zapier.com/blog/how-zapier-rolled-out-ai/)
+> [Jak Zapier dosáhl 97% adopce AI](https://zapier.com/blog/how-zapier-rolled-out-ai/)
 
 | # | Princip |
 |---|---------|
@@ -217,11 +217,11 @@ Principy z předchozí sekce definují, jak by měl fungovat tým. Ale AI adopce
 
 | # | Doporučení | Detail |
 |---|------------|--------|
-| ⏱️ | **Vytvořte si čas na rychlou i hlubokou práci s AI** | AI pomáhá jak s rychlými úkoly (e-mail, shrnutí), tak s hlubokou prací (analýza, strategie, prototypování). Vyčleňte si čas na obojí. |
-| 🔄 | **Sdílejte** | Zapojte se do sdílecích kanálů, AI check-inů a aktualizací na poradách. Co se naučíte, předejte dál. |
-| 🛠️ | **Učte se na konkrétních projektech** | Learning by doing — vyberte si reálný projekt a řešte ho s AI. Teorie bez praxe nefunguje. |
-| 🧩 | **Organizujte praktické webináře, workshopy a hackathony** | Nemusíte čekat na firmu. Začněte sami — pozvěte kolegy, ukažte, co jste vytvořili. |
-| 👥 | **Buďte aktivní v komunitách** | Interně i mimo organizaci. Připojte se k AI komunitám, navštěvujte meetupy, sdílejte zkušenosti napříč firmami. |
+| | **Vytvořte si čas na rychlou i hlubokou práci s AI** | AI pomáhá jak s rychlými úkoly (e-mail, shrnutí), tak s hlubokou prací (analýza, strategie, prototypování). Vyčleňte si čas na obojí. |
+| | **Sdílejte** | Zapojte se do sdílecích kanálů, AI check-inů a aktualizací na poradách. Co se naučíte, předejte dál. |
+| | **Učte se na konkrétních projektech** | Learning by doing — vyberte si reálný projekt a řešte ho s AI. Teorie bez praxe nefunguje. |
+| | **Organizujte praktické webináře, workshopy a hackathony** | Nemusíte čekat na firmu. Začněte sami — pozvěte kolegy, ukažte, co jste vytvořili. |
+| | **Buďte aktivní v komunitách** | Interně i mimo organizaci. Připojte se k AI komunitám, navštěvujte meetupy, sdílejte zkušenosti napříč firmami. |
 
 ---
 
@@ -229,11 +229,11 @@ Principy z předchozí sekce definují, jak by měl fungovat tým. Ale AI adopce
 
 | # | Doporučení | Detail |
 |---|------------|--------|
-| ⚙️ | **Přistupujte k AI adopci jako k firemní iniciativě, ne IT projektu** | AI adopce je zodpovědnost vedení, ne IT oddělení. Pokud to delegujete na IT, signalizujete, že to není priorita. |
-| 👥 | **Upřednostněte lidi s AI-first mindsetem a investujte do upskillingu** | Při náboru hledejte AI-first přístup. Současné zaměstnance systematicky vzdělávejte. |
-| 🎯 | **Uvědomte si, že úspěšná AI adopce vyžaduje špičkové lidi** | AI zesiluje schopnosti — ale nejprve musíte mít lidi, kteří vědí, co s ní dělat. Talenty jsou klíčové. |
-| 🛠️ | **Přitáhněte a udržte talenty tím, že jim dáte špičkové nástroje** | Nejlepší lidé chtějí pracovat s nejlepšími nástroji. Pokud omezujete přístup k AI nástrojům, ztrácíte talenty. |
-| 🪞 | **Jděte příkladem** | Vedení musí AI používat viditelně a aktivně. Pokud CEO nepoužívá AI, proč by to měl dělat kdokoli jiný? |
+| | **Přistupujte k AI adopci jako k firemní iniciativě, ne IT projektu** | AI adopce je zodpovědnost vedení, ne IT oddělení. Pokud to delegujete na IT, signalizujete, že to není priorita. |
+| | **Upřednostněte lidi s AI-first mindsetem a investujte do upskillingu** | Při náboru hledejte AI-first přístup. Současné zaměstnance systematicky vzdělávejte. |
+| | **Uvědomte si, že úspěšná AI adopce vyžaduje špičkové lidi** | AI zesiluje schopnosti — ale nejprve musíte mít lidi, kteří vědí, co s ní dělat. Talenty jsou klíčové. |
+| | **Přitáhněte a udržte talenty tím, že jim dáte špičkové nástroje** | Nejlepší lidé chtějí pracovat s nejlepšími nástroji. Pokud omezujete přístup k AI nástrojům, ztrácíte talenty. |
+| | **Jděte příkladem** | Vedení musí AI používat viditelně a aktivně. Pokud CEO nepoužívá AI, proč by to měl dělat kdokoli jiný? |
 
 ---
 

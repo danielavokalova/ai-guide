@@ -1,4 +1,4 @@
-# 🎯 LNO Framework — Jak na priority
+# LNO Framework — Jak na priority
 
 > **Modul:** Modul 1
 > Framework pro prioritizaci úkolů: Leverage (dej maximum), Neutral (stačí dostatečně), Overhead (odškrtni). Adaptace pro práci s AI.

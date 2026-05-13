@@ -1,4 +1,4 @@
-# 📑 E-maily s insighty z dokumentů
+# E-maily s insighty z dokumentů
 
 > **Modul:** Modul 5
 > Posílejte e-maily obohacené o konkrétní poznatky z dokumentů a dat.

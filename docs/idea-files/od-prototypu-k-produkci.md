@@ -1,4 +1,4 @@
-# 🎯 Od prototypu k produkci
+# Od prototypu k produkci
 
 > **Modul:** Session 4
 > Jak dotáhnout projekt k aplikaci pro reálné uživatele — test/produkce, zálohy a pre-launch checklist.
