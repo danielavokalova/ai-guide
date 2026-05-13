@@ -15,8 +15,9 @@
       --muted: #8b9cb3;
       --accent: #5b9fd4;
       --accent-dim: #3d6f94;
-      --radius: 10px;
+      --radius: 12px;
       --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+      font-size: 18px;
     }
     * { box-sizing: border-box; }
     body {
@@ -28,90 +29,114 @@
       line-height: 1.55;
     }
     header {
-      padding: 1rem 1.25rem;
+      padding: 1.35rem clamp(1rem, 4vw, 2.5rem);
       border-bottom: 1px solid var(--border);
       background: var(--bg-elev);
-      position: sticky;
-      top: 0;
-      z-index: 10;
     }
     header h1 {
-      margin: 0 0 0.35rem;
-      font-size: 1.15rem;
-      font-weight: 600;
+      margin: 0 0 0.4rem;
+      font-size: clamp(1.65rem, 3.2vw, 2.15rem);
+      font-weight: 650;
+      letter-spacing: -0.03em;
     }
-    header p { margin: 0; font-size: 0.85rem; color: var(--muted); }
+    header p {
+      margin: 0;
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 52ch;
+    }
     .search {
-      margin-top: 0.75rem;
+      margin-top: 1rem;
       width: 100%;
-      max-width: 420px;
-      padding: 0.55rem 0.75rem;
+      max-width: 28rem;
+      padding: 0.65rem 0.9rem;
       border-radius: var(--radius);
       border: 1px solid var(--border);
       background: var(--bg);
       color: var(--text);
-      font-size: 0.95rem;
+      font-size: 1.05rem;
     }
     .search:focus {
       outline: 2px solid var(--accent);
       border-color: var(--accent-dim);
     }
-    .layout {
+    .page {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1.75rem clamp(1rem, 4vw, 2.5rem) 2.5rem;
+    }
+    .section {
+      margin-bottom: 2.35rem;
+    }
+    .section:last-of-type {
+      margin-bottom: 0;
+    }
+    .section-head {
+      font-size: 1.35rem;
+      font-weight: 650;
+      margin: 0 0 1rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+    .tile-grid {
       display: grid;
-      grid-template-columns: minmax(220px, 280px) 1fr;
-      min-height: calc(100vh - 120px);
+      gap: 0.9rem;
+      grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
     }
-    @media (max-width: 860px) {
-      .layout { grid-template-columns: 1fr; }
-      aside { border-right: none !important; border-bottom: 1px solid var(--border); max-height: 40vh; }
-    }
-    aside {
-      border-right: 1px solid var(--border);
-      overflow: auto;
-      padding: 0.75rem 0;
-    }
-    .cat {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--muted);
-      padding: 0.5rem 1rem 0.25rem;
-    }
-    nav button {
+    .tile {
       display: block;
       width: 100%;
       text-align: left;
-      padding: 0.45rem 1rem;
-      border: none;
-      background: transparent;
+      padding: 1.15rem 1.2rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-elev);
       color: var(--text);
-      font-size: 0.88rem;
+      font-size: 1.08rem;
+      line-height: 1.38;
+      font-family: inherit;
       cursor: pointer;
-      border-left: 3px solid transparent;
+      transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
     }
-    nav button:hover { background: rgba(91, 159, 212, 0.08); }
-    nav button.active {
-      border-left-color: var(--accent);
-      background: rgba(91, 159, 212, 0.12);
+    .tile:hover {
+      border-color: var(--accent-dim);
+      background: #1f2a3d;
     }
-    main {
-      padding: 1.25rem 1.5rem 3rem;
-      overflow: auto;
-      max-width: 900px;
+    .tile.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px var(--accent);
+      background: #1e2d42;
+    }
+    .tail-block {
+      margin-top: 2.75rem;
+      padding-top: 2.25rem;
+      border-top: 1px solid var(--border);
+    }
+    .reader-wrap {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
     }
     .doc-meta {
-      font-size: 0.8rem;
+      font-size: 0.98rem;
       color: var(--muted);
       margin-bottom: 1rem;
     }
-    .content :is(h1, h2, h3) { margin-top: 1.4rem; margin-bottom: 0.5rem; }
-    .content h1 { font-size: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; }
+    .content { font-size: 1.07rem; max-width: 72ch; }
+    .content :is(h1, h2, h3) { margin-top: 1.35rem; margin-bottom: 0.5rem; }
+    .content h1 {
+      font-size: 1.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+    .content h2 { font-size: 1.35rem; }
+    .content h3 { font-size: 1.15rem; }
     .content a { color: var(--accent); }
     .content code {
       background: var(--bg-elev);
       padding: 0.12rem 0.35rem;
       border-radius: 4px;
-      font-size: 0.88em;
+      font-size: 0.92em;
     }
     .content pre {
       background: var(--bg-elev);
@@ -119,14 +144,19 @@
       border-radius: var(--radius);
       overflow: auto;
       border: 1px solid var(--border);
+      font-size: 0.95em;
     }
     .content pre code { background: none; padding: 0; }
-    .content img { max-width: 100%; height: auto; border-radius: 6px; }
+    .content img,
+    .content picture,
+    .content svg[role="img"] {
+      display: none !important;
+    }
     .empty { color: var(--muted); font-style: italic; }
     footer {
-      padding: 1rem;
+      padding: 1.1rem;
       text-align: center;
-      font-size: 0.75rem;
+      font-size: 0.92rem;
       color: var(--muted);
       border-top: 1px solid var(--border);
     }
@@ -135,28 +165,43 @@
 <body>
   <header>
     <h1>FAIL Portal</h1>
-    <p>Future AI Leader 2026 — prompty, idea files a návody. Jen obsah tohoto webu; vyhledávání podle názvu.</p>
+    <p>Future AI Leader 2026 — prompty, idea files a návody. Vyhledávání podle názvu.</p>
     <input type="search" class="search" id="q" placeholder="Hledat v názvech…" autocomplete="off" />
   </header>
-  <div class="layout">
-    <aside>
-      <div id="nav"></div>
-    </aside>
-    <main>
+  <div class="page">
+    <div id="sections"></div>
+    <div class="reader-wrap">
       <div id="meta" class="doc-meta"></div>
       <article id="view" class="content">
-        <p class="empty">Vyberte článek v seznamu vlevo.</p>
+        <p class="empty">Vyberte článek kliknutím na dlaždici.</p>
       </article>
-    </main>
+    </div>
   </div>
   <footer>FAIL Portal · Future AI Leader 2026</footer>
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
   <script>
     (async function () {
-      const navEl = document.getElementById("nav");
+      const sectionsEl = document.getElementById("sections");
       const viewEl = document.getElementById("view");
       const metaEl = document.getElementById("meta");
       const qEl = document.getElementById("q");
+
+      const TAIL_IDS = new Set([
+        "idea-files/osobni-ai-briefing",
+        "prompty/ai-pruvodce-nastroji-osobni-konzultant",
+        "prompty/claude-code-asistent-osobni-pruvodce",
+      ]);
+      const TAIL_ORDER = [
+        "idea-files/osobni-ai-briefing",
+        "prompty/ai-pruvodce-nastroji-osobni-konzultant",
+        "prompty/claude-code-asistent-osobni-pruvodce",
+      ];
+      const SECTION_ORDER = [
+        "Přehled portálu",
+        "Dokumenty & návody",
+        "Idea files",
+        "Prompty & šablony",
+      ];
 
       const res = await fetch("manifest.json");
       if (!res.ok) {
@@ -166,9 +211,34 @@
       const data = await res.json();
       const articles = data.articles || [];
 
-      function groupByCategory(items) {
+      function stripLeadingEmojiTitle(s) {
+        let t = s;
+        for (let i = 0; i < 6; i++) {
+          const n = t.replace(/^[\uFE0F\u200D\s]*(?:\p{Extended_Pictographic})+/u, "").trimStart();
+          if (n === t) break;
+          t = n;
+        }
+        return (t || s).trim();
+      }
+
+      function displayTitle(a) {
+        return stripLeadingEmojiTitle(a.title);
+      }
+
+      function partition(arts) {
+        const main = [];
+        const tail = [];
+        for (const a of arts) {
+          if (TAIL_IDS.has(a.id)) tail.push(a);
+          else main.push(a);
+        }
+        tail.sort((a, b) => TAIL_ORDER.indexOf(a.id) - TAIL_ORDER.indexOf(b.id));
+        return { main, tail };
+      }
+
+      function groupByLabel(arts) {
         const m = {};
-        for (const a of items) {
+        for (const a of arts) {
           const key = a.categoryLabel || a.category;
           if (!m[key]) m[key] = [];
           m[key].push(a);
@@ -176,64 +246,101 @@
         return m;
       }
 
+      function sortSectionLabel(a, b) {
+        const ia = SECTION_ORDER.indexOf(a);
+        const ib = SECTION_ORDER.indexOf(b);
+        const va = ia === -1 ? 999 : ia;
+        const vb = ib === -1 ? 999 : ib;
+        if (va !== vb) return va - vb;
+        return a.localeCompare(b, "cs");
+      }
+
       let activeBtn = null;
       let hasAutoLoaded = false;
+
       async function loadDoc(art, btn) {
         if (activeBtn) activeBtn.classList.remove("active");
         if (btn) {
           activeBtn = btn;
           btn.classList.add("active");
         }
-        metaEl.textContent = art.categoryLabel + " · " + art.title;
+        metaEl.textContent =
+          (art.categoryLabel || "") + " · " + displayTitle(art);
         viewEl.innerHTML = "<p class='empty'>Načítám…</p>";
         const r = await fetch(art.path);
         const md = await r.text();
         viewEl.innerHTML = marked.parse(md);
       }
 
-      function artFromButton(btn) {
-        const p = btn.dataset.path;
-        return articles.find((x) => x.path === p);
+      function makeTile(art) {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "tile";
+        b.textContent = displayTitle(art);
+        b.dataset.path = art.path;
+        b.addEventListener("click", () => loadDoc(art, b));
+        return b;
+      }
+
+      function renderSection(container, label, arts) {
+        if (!arts.length) return;
+        const sec = document.createElement("section");
+        sec.className = "section";
+        const h = document.createElement("h2");
+        h.className = "section-head";
+        h.textContent = label;
+        sec.appendChild(h);
+        const grid = document.createElement("div");
+        grid.className = "tile-grid";
+        for (const a of arts) grid.appendChild(makeTile(a));
+        sec.appendChild(grid);
+        container.appendChild(sec);
       }
 
       function repaint() {
+        activeBtn = null;
         const needle = qEl.value.trim().toLowerCase();
         const filtered = needle
-          ? articles.filter((a) => a.title.toLowerCase().includes(needle))
+          ? articles.filter(
+              (a) =>
+                a.title.toLowerCase().includes(needle) ||
+                displayTitle(a).toLowerCase().includes(needle)
+            )
           : articles.slice();
-        const groups = groupByCategory(filtered);
-        navEl.innerHTML = "";
-        for (const ck of Object.keys(groups).sort()) {
-          const items = groups[ck];
-          const cdiv = document.createElement("div");
-          cdiv.className = "cat";
-          cdiv.textContent = ck;
-          navEl.appendChild(cdiv);
-          const wrap = document.createElement("nav");
-          for (const a of items) {
-            const b = document.createElement("button");
-            b.type = "button";
-            b.textContent = a.title;
-            b.dataset.path = a.path;
-            b.addEventListener("click", () => {
-              const art = artFromButton(b);
-              if (art) loadDoc(art, b);
-            });
-            wrap.appendChild(b);
-          }
-          navEl.appendChild(wrap);
+
+        const { main, tail } = partition(filtered);
+        const groups = groupByLabel(main);
+
+        sectionsEl.innerHTML = "";
+        const labels = Object.keys(groups).sort(sortSectionLabel);
+        for (const label of labels) {
+          renderSection(sectionsEl, label, groups[label]);
         }
+
+        if (tail.length) {
+          const wrap = document.createElement("div");
+          wrap.className = "tail-block";
+          renderSection(wrap, "Osobní & briefing", tail);
+          sectionsEl.appendChild(wrap);
+        }
+
         if (!needle && filtered.length && !hasAutoLoaded) {
-          const firstBtn = navEl.querySelector("button");
+          const firstBtn = sectionsEl.querySelector(".tile");
           if (firstBtn) {
-            hasAutoLoaded = true;
-            const first = artFromButton(firstBtn);
-            if (first) loadDoc(first, firstBtn);
+            const path = firstBtn.dataset.path;
+            const art = articles.find((x) => x.path === path);
+            if (art) {
+              hasAutoLoaded = true;
+              loadDoc(art, firstBtn);
+            }
           }
         }
       }
 
-      qEl.addEventListener("input", repaint);
+      qEl.addEventListener("input", () => {
+        hasAutoLoaded = true;
+        repaint();
+      });
       repaint();
     })();
   </script>
