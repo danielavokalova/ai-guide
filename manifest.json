@@ -1,557 +1,305 @@
 {
   "articles": [
     {
-      "id": "configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-customize-notifications-in-your-gol-ibe",
-      "path": "docs/configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-customize-notifications-in-your-gol-ibe.md",
-      "title": "How to customize notifications in your GOL IBE ?",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "dokumenty/fail-13-3-zadani",
+      "path": "docs/dokumenty/fail-13-3-zadani.md",
+      "title": "FAIL 13.3 — zadání (export z Wordu)",
+      "category": "dokumenty",
+      "categoryLabel": "Dokumenty & návody"
     },
     {
-      "id": "configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-design-your-gol-ibe-site",
-      "path": "docs/configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-design-your-gol-ibe-site.md",
-      "title": "How to design your GOL IBE site ?",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "dokumenty/lno-framework-jak-na-priority",
+      "path": "docs/dokumenty/lno-framework-jak-na-priority.md",
+      "title": "🎯 LNO Framework — Jak na priority",
+      "category": "dokumenty",
+      "categoryLabel": "Dokumenty & návody"
     },
     {
-      "id": "configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-implement-the-air-ticket-search-form-into-your-agency-website",
-      "path": "docs/configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-implement-the-air-ticket-search-form-into-your-agency-website.md",
-      "title": "How to implement the air ticket search form into your agency website?",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "dokumenty/power-hour-postav-cokoliv-za-hodinu",
+      "path": "docs/dokumenty/power-hour-postav-cokoliv-za-hodinu.md",
+      "title": "⚡ Power Hour — Postav cokoliv za hodinu",
+      "category": "dokumenty",
+      "categoryLabel": "Dokumenty & návody"
     },
     {
-      "id": "configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-set-up-service-fee",
-      "path": "docs/configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-set-up-service-fee.md",
-      "title": "How to set up service fee?",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "dokumenty/pruvodce-adopci-ai-ve-firme",
+      "path": "docs/dokumenty/pruvodce-adopci-ai-ve-firme.md",
+      "title": "🏢 Průvodce adopcí AI ve firmě",
+      "category": "dokumenty",
+      "categoryLabel": "Dokumenty & návody"
     },
     {
-      "id": "configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-set-up-working-hours-in-your-gol-ibe",
-      "path": "docs/configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-set-up-working-hours-in-your-gol-ibe.md",
-      "title": "How to set up working hours in your GOL IBE ?",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "idea-files/batch-intelligence-hromadne-zpracovani",
+      "path": "docs/idea-files/batch-intelligence-hromadne-zpracovani.md",
+      "title": "⚡ Batch Intelligence — hromadné zpracování",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "configuration/1-gol-ibe-4-gol-ibe-advanced-settings-mir",
-      "path": "docs/configuration/1-gol-ibe-4-gol-ibe-advanced-settings-mir.md",
-      "title": "How to handle MIR?",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "idea-files/batch-processing-bez-kodu",
+      "path": "docs/idea-files/batch-processing-bez-kodu.md",
+      "title": "📊 Batch Processing bez kódu",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "configuration/1-gol-ibe-4-gol-ibe-advanced-settings-multipcc-dotazovani",
-      "path": "docs/configuration/1-gol-ibe-4-gol-ibe-advanced-settings-multipcc-dotazovani.md",
-      "title": "What is MultiPCC request about?",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "idea-files/batch-processing-s-kodem",
+      "path": "docs/idea-files/batch-processing-s-kodem.md",
+      "title": "⚡ Batch Processing s kódem",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "configuration/1-gol-ibe-4-gol-ibe-advanced-settings-paraleleni-dotazovani",
-      "path": "docs/configuration/1-gol-ibe-4-gol-ibe-advanced-settings-paraleleni-dotazovani.md",
-      "title": "How to handle Parallel requests?",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "idea-files/data-interaktivni-report",
+      "path": "docs/idea-files/data-interaktivni-report.md",
+      "title": "📊 Data → Interaktivní report",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "configuration/1-gol-ibe-4-gol-ibe-advanced-settings-servisni-poplatek-z-provize-letecke-spolecnosti",
-      "path": "docs/configuration/1-gol-ibe-4-gol-ibe-advanced-settings-servisni-poplatek-z-provize-letecke-spolecnosti.md",
-      "title": "How to add a service fee from airline commission?",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "idea-files/e-maily-s-insighty-z-dokumentu",
+      "path": "docs/idea-files/e-maily-s-insighty-z-dokumentu.md",
+      "title": "📑 E-maily s insighty z dokumentů",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "configuration/basic-settings",
-      "path": "docs/configuration/basic-settings.md",
-      "title": "Basic Settings",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "idea-files/email-triage-agent",
+      "path": "docs/idea-files/email-triage-agent.md",
+      "title": "📬 Email Triage Agent",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "configuration/gol-ibe-advanced-settings",
-      "path": "docs/configuration/gol-ibe-advanced-settings.md",
-      "title": "4. GOL IBE - advanced settings",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "idea-files/follow-up-e-maily-po-schuzkach",
+      "path": "docs/idea-files/follow-up-e-maily-po-schuzkach.md",
+      "title": "📧 Follow-up e-maily po schůzkách",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "configuration/gol-ibe-basic-settings",
-      "path": "docs/configuration/gol-ibe-basic-settings.md",
-      "title": "3. GOL IBE - basic settings",
-      "category": "configuration",
-      "categoryLabel": "Configuration"
+      "id": "idea-files/jak-designovat-ai-automatizaci",
+      "path": "docs/idea-files/jak-designovat-ai-automatizaci.md",
+      "title": "🧭 Jak Designovat AI Automatizaci",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-carriers",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-carriers.md",
-      "title": "Carriers",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/konsolidace-dat-z-vice-zdroju",
+      "path": "docs/idea-files/konsolidace-dat-z-vice-zdroju.md",
+      "title": "🔗 Konsolidace dat z více zdrojů",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-destination-filters",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-destination-filters.md",
-      "title": "Destination filters",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/md-soubory-a-pravidla-pro-ai",
+      "path": "docs/idea-files/md-soubory-a-pravidla-pro-ai.md",
+      "title": "📝 MD soubory a pravidla pro AI",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-how-about-section-blocked-e-mails",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-how-about-section-blocked-e-mails.md",
-      "title": "How about section Blocked e-mails?",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/naucte-ai-vas-styl",
+      "path": "docs/idea-files/naucte-ai-vas-styl.md",
+      "title": "✍️ Naučte AI váš styl",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-what-is-section-flush-cashes-good-for",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-what-is-section-flush-cashes-good-for.md",
-      "title": "What is section Flush cashes good for?",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/od-designu-ke-kompletni-identite",
+      "path": "docs/idea-files/od-designu-ke-kompletni-identite.md",
+      "title": "💎 Od designu ke kompletní identitě",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-what-is-section-flush-html-cashes-good-for",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-what-is-section-flush-html-cashes-good-for.md",
-      "title": "What is section Flush HTML cashes good for?",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/od-prototypu-k-produkci",
+      "path": "docs/idea-files/od-prototypu-k-produkci.md",
+      "title": "🎯 Od prototypu k produkci",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists.md",
-      "title": "Code lists",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/osobni-ai-briefing",
+      "path": "docs/idea-files/osobni-ai-briefing.md",
+      "title": "☀️ Osobní AI Briefing",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-how-to-add-a-fee-for-payment-method",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-how-to-add-a-fee-for-payment-method.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Agency How To Add A Fee For Payment Method",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/personalizovana-webova-aplikace-s-ai",
+      "path": "docs/idea-files/personalizovana-webova-aplikace-s-ai.md",
+      "title": "🌐 Personalizovaná webová aplikace s AI",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-what-is-section-e-mail-notifications-good-for",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-what-is-section-e-mail-notifications-good-for.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Agency What Is Section E Mail Notifications Good For",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/rozjed-svuj-prvni-vibe-coding-projekt",
+      "path": "docs/idea-files/rozjed-svuj-prvni-vibe-coding-projekt.md",
+      "title": "🚀 Rozjeď svůj první vibe coding projekt",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Agency",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/smart-extract-data-z-dokumentu",
+      "path": "docs/idea-files/smart-extract-data-z-dokumentu.md",
+      "title": "🔍 Smart Extract — data z dokumentů",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-code-lists-what-is-section-destination-filters-good-for",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-code-lists-what-is-section-destination-filters-good-for.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Code Lists What Is Section Destination Filters Good For",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/source-output-matrix",
+      "path": "docs/idea-files/source-output-matrix.md",
+      "title": "🔀 Source → Output Matrix",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-dealers-customization-via-dealer-edit-how-to-set-up-a-multi-currency",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-dealers-customization-via-dealer-edit-how-to-set-up-a-multi-currency.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Dealers Customization Via Dealer Edit How To Set Up A Multi Currency",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/stavim-interni-nastroj-pro-svuj-tym",
+      "path": "docs/idea-files/stavim-interni-nastroj-pro-svuj-tym.md",
+      "title": "🛠️ Stavím interní nástroj pro svůj tým",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-dealers",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-dealers.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Dealers",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/vibe-coding-v-korporatnim-prostredi",
+      "path": "docs/idea-files/vibe-coding-v-korporatnim-prostredi.md",
+      "title": "🏢 Vibe coding v korporátním prostředí",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-prices-how-to-create-discount-for-certain-carrier-and-certain-flight",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-prices-how-to-create-discount-for-certain-carrier-and-certain-flight.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Prices How To Create Discount For Certain Carrier And Certain Flight",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/vizualni-identita-s-ai",
+      "path": "docs/idea-files/vizualni-identita-s-ai.md",
+      "title": "🎨 Vizuální identita s AI",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-prices-how-to-handle-service-fees-for-2ows",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-prices-how-to-handle-service-fees-for-2ows.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Prices How To Handle Service Fees For 2Ows",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/zabezpecte-svou-vibe-coded-aplikaci",
+      "path": "docs/idea-files/zabezpecte-svou-vibe-coded-aplikaci.md",
+      "title": "🔒 Zabezpečte svou vibe-coded aplikaci",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-reservations-gol-ibe-how-to-handle-bookings",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-reservations-gol-ibe-how-to-handle-bookings.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Reservations Gol Ibe How To Handle Bookings",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "idea-files/znalostni-baze-pro-opakovane-dotazy",
+      "path": "docs/idea-files/znalostni-baze-pro-opakovane-dotazy.md",
+      "title": "🧠 Znalostní báze pro opakované dotazy",
+      "category": "idea-files",
+      "categoryLabel": "Idea files"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-css",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-css.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Supporting Texts Css",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prehled-portal-fail",
+      "path": "docs/prehled-portal-fail.md",
+      "title": "Top prompty a návody — FAIL Portal",
+      "category": "prehled",
+      "categoryLabel": "Přehled portálu"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-create-a-footer",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-create-a-footer.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Supporting Texts How To Create A Footer",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/ai-pruvodce-nastroji-osobni-konzultant",
+      "path": "docs/prompty/ai-pruvodce-nastroji-osobni-konzultant.md",
+      "title": "🧭 AI Průvodce nástroji — Osobní konzultant",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-create-menu-on-your-front-end",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-create-menu-on-your-front-end.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Supporting Texts How To Create Menu On Your Front End",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/ai-wbs-architect-strategicky-plan-projektu-v-ai-ere",
+      "path": "docs/prompty/ai-wbs-architect-strategicky-plan-projektu-v-ai-ere.md",
+      "title": "🗂️ AI-WBS Architect — Strategický plán projektu v AI éře",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-edit-your-ticket-itinerary-template",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-edit-your-ticket-itinerary-template.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Supporting Texts How To Edit Your Ticket Itinerary Template",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/claude-code-asistent-osobni-pruvodce",
+      "path": "docs/prompty/claude-code-asistent-osobni-pruvodce.md",
+      "title": "🤖 Claude Code Asistent — Osobní průvodce",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-manage-terms-and-conditions",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-manage-terms-and-conditions.md",
-      "title": "1 Gol Ibe 2 Gol Ibe Step By Step Gol Ibe Supporting Texts How To Manage Terms And Conditions",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/content-automation-architect-tvorba-obsahu-skriptem",
+      "path": "docs/prompty/content-automation-architect-tvorba-obsahu-skriptem.md",
+      "title": "⚡ Content Automation Architect — Tvorba obsahu skriptem",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-notifications-notification-templates",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-notifications-notification-templates.md",
-      "title": "Notification templates",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/custom-instructions-naucte-ai-kdo-jste",
+      "path": "docs/prompty/custom-instructions-naucte-ai-kdo-jste.md",
+      "title": "📋 Custom Instructions — Naučte AI, kdo jste",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-notifications-sent-notifications",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-notifications-sent-notifications.md",
-      "title": "Sent notifications",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/deep-research-vyzkumny-analytik-s-overenymi-zdroji",
+      "path": "docs/prompty/deep-research-vyzkumny-analytik-s-overenymi-zdroji.md",
+      "title": "🔍 Deep Research — Výzkumný analytik s ověřenými zdroji",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-notifications",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-notifications.md",
-      "title": "Notifications",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/idea-file-creator-sdileni-myslenek-pres-ai",
+      "path": "docs/prompty/idea-file-creator-sdileni-myslenek-pres-ai.md",
+      "title": "💡 Idea File Creator — Sdílení myšlenek přes AI",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-how-to-handle-service-fees",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-how-to-handle-service-fees.md",
-      "title": "How to handle service fees?",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/info-zprava-pro-lidi-i-ai",
+      "path": "docs/prompty/info-zprava-pro-lidi-i-ai.md",
+      "title": "💬 Info zpráva pro lidi i AI",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-how-to-handle-special-offers",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-how-to-handle-special-offers.md",
-      "title": "How to handle special offers?",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/panel-expertu-verze-pro-chatovaci-ai",
+      "path": "docs/prompty/panel-expertu-verze-pro-chatovaci-ai.md",
+      "title": "💬 Panel expertů — verze pro chatovací AI",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-how-to-manage-promocodes",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-how-to-manage-promocodes.md",
-      "title": "How to manage promocodes?",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/panel-expertu-verze-pro-code-cowork-nastroje",
+      "path": "docs/prompty/panel-expertu-verze-pro-code-cowork-nastroje.md",
+      "title": "💻 Panel expertů — verze pro code / cowork nástroje",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-what-is-section-commissions-and-discounts-good-for",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-what-is-section-commissions-and-discounts-good-for.md",
-      "title": "What is section Commissions and discounts good for ?",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/prd-creator-rychly-generator-produktoveho-zadani",
+      "path": "docs/prompty/prd-creator-rychly-generator-produktoveho-zadani.md",
+      "title": "🏗️ PRD Creator — Rychlý generátor produktového zadání",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices.md",
-      "title": "Prices",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/presentation-builder-interaktivni-html-prezentace",
+      "path": "docs/prompty/presentation-builder-interaktivni-html-prezentace.md",
+      "title": "📊 Presentation Builder — Interaktivní HTML prezentace",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-reservations-gol-ibe-how-to-handle-bookings-in-admin-console",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-reservations-gol-ibe-how-to-handle-bookings-in-admin-console.md",
-      "title": "GOL IBE - How to handle bookings in admin console",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/prompt-architect-tvorba-profesionalnich-promptu",
+      "path": "docs/prompty/prompt-architect-tvorba-profesionalnich-promptu.md",
+      "title": "✏️ Prompt Architect — Tvorba profesionálních promptů",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-reservations",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-reservations.md",
-      "title": "Reservations",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
+      "id": "prompty/slide-designer-strukturovane-slidy-z-jakehokoliv-obsahu",
+      "path": "docs/prompty/slide-designer-strukturovane-slidy-z-jakehokoliv-obsahu.md",
+      "title": "🎨 Slide Designer — Strukturované slidy z jakéhokoliv obsahu",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     },
     {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-statistics",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-statistics.md",
-      "title": "Statistics",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
-    },
-    {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-supporting-texts",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-supporting-texts.md",
-      "title": "Supporting texts",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
-    },
-    {
-      "id": "getting-started/1-gol-ibe-2-gol-ibe-step-by-step-users",
-      "path": "docs/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-users.md",
-      "title": "Users",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
-    },
-    {
-      "id": "getting-started/2-gol-ibe-step-by-step-dealers-customization-via-dealer-edit-how-to-manage-calendar-on-your-gol-ibe-web-e698fa",
-      "path": "docs/getting-started/2-gol-ibe-step-by-step-dealers-customization-via-dealer-edit-how-to-manage-calendar-on-your-gol-ibe-web-e698fa.md",
-      "title": "How to manage calendar on your GOL IBE web?",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
-    },
-    {
-      "id": "getting-started/2-gol-ibe-step-by-step-gol-ibe-dealers-customization-via-dealer-front-end-settings-basic-fronted-customization",
-      "path": "docs/getting-started/2-gol-ibe-step-by-step-gol-ibe-dealers-customization-via-dealer-front-end-settings-basic-fronted-customization.md",
-      "title": "2 Gol Ibe Step By Step Gol Ibe Dealers Customization Via Dealer Front End Settings Basic Fronted Customization",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
-    },
-    {
-      "id": "getting-started/2-gol-ibe-step-by-step-gol-ibe-dealers-customization-via-dealer-front-end-settings-how-to-change-background-on",
-      "path": "docs/getting-started/2-gol-ibe-step-by-step-gol-ibe-dealers-customization-via-dealer-front-end-settings-how-to-change-background-on.md",
-      "title": "2 Gol Ibe Step By Step Gol Ibe Dealers Customization Via Dealer Front End Settings How To Change Background On",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
-    },
-    {
-      "id": "getting-started/gol-ibe-intro",
-      "path": "docs/getting-started/gol-ibe-intro.md",
-      "title": "1. GOL IBE - intro",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
-    },
-    {
-      "id": "getting-started/gol-ibe-step-by-step",
-      "path": "docs/getting-started/gol-ibe-step-by-step.md",
-      "title": "2. GOL IBE - step by step",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
-    },
-    {
-      "id": "getting-started/overview",
-      "path": "docs/getting-started/overview.md",
-      "title": "Getting Started Overview",
-      "category": "getting-started",
-      "categoryLabel": "Getting started"
-    },
-    {
-      "id": "operations/daily-workflows",
-      "path": "docs/operations/daily-workflows.md",
-      "title": "Daily Workflows",
-      "category": "operations",
-      "categoryLabel": "Operations"
-    },
-    {
-      "id": "release-notes/2026-03-initial",
-      "path": "docs/release-notes/2026-03-initial.md",
-      "title": "2026-03 Initial",
-      "category": "release-notes",
-      "categoryLabel": "Release notes"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-help-for-colour-customization-of-your-gol-ibe-of-your-gol-ibe-front-end",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-help-for-colour-customization-of-your-gol-ibe-of-your-gol-ibe-front-end.md",
-      "title": "1 Gol Ibe 5 Gol Ibe Faqs Help For Colour Customization Of Your Gol Ibe Of Your Gol Ibe Front End",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-a-new-user-s-access",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-a-new-user-s-access.md",
-      "title": "How to create a new user´s access?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-a-service-fee",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-a-service-fee.md",
-      "title": "How to create a service fee?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-footer-on-your-frontend",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-footer-on-your-frontend.md",
-      "title": "How to create footer on your frontend?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-menu-on-your-front-end",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-menu-on-your-front-end.md",
-      "title": "How to create menu on your front-end?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-customize-section-from-e-mail",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-customize-section-from-e-mail.md",
-      "title": "How to customize section From e-mail:?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-customize-your-domain",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-customize-your-domain.md",
-      "title": "How to customize your domain?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-edit-your-ticket-itinerary-template",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-edit-your-ticket-itinerary-template.md",
-      "title": "How to edit your ticket itinerary template?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-export-the-list-of-bookings",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-export-the-list-of-bookings.md",
-      "title": "How to export the list of bookings?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-handle-bookings-in-gol-ibe",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-handle-bookings-in-gol-ibe.md",
-      "title": "How to handle bookings in GOL IBE?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-handle-bookings-with-clients",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-handle-bookings-with-clients.md",
-      "title": "How to handle bookings with clients?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-handle-special-offers",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-handle-special-offers.md",
-      "title": "How to handle special offers?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-hide-carrier-on-your-search-form",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-hide-carrier-on-your-search-form.md",
-      "title": "1 Gol Ibe 5 Gol Ibe Faqs How To Hide Carrier On Your Search Form",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-own-gol-ibe-user-s-account",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-own-gol-ibe-user-s-account.md",
-      "title": "How to manage own GOL IBE user´s account?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-section-working-hours-modification",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-section-working-hours-modification.md",
-      "title": "1 Gol Ibe 5 Gol Ibe Faqs How To Manage Section Working Hours Modification",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-terms-and-conditions",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-terms-and-conditions.md",
-      "title": "How to manage terms and conditions?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-travel-documents-in-gol-ibe",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-travel-documents-in-gol-ibe.md",
-      "title": "How to manage travel documents in GOL IBE?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-stop-someone-from-sending-fake-booking",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-stop-someone-from-sending-fake-booking.md",
-      "title": "How to stop someone from sending fake booking?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-pracovni-doba",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-pracovni-doba.md",
-      "title": "How to set up working hours?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-vlozeni-seznamu-promoakci",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-vlozeni-seznamu-promoakci.md",
-      "title": "1 Gol Ibe 5 Gol Ibe Faqs Vlozeni Seznamu Promoakci",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-vlozeni-vyhledavaciho-formulare-letenek",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-vlozeni-vyhledavaciho-formulare-letenek.md",
-      "title": "How to implement air ticket search form?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-what-is-section-flush-cashes-good-for",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-what-is-section-flush-cashes-good-for.md",
-      "title": "What is section Flush cashes good for?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-what-is-section-flush-hmtl-cashes-good-for",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-what-is-section-flush-hmtl-cashes-good-for.md",
-      "title": "What is section Flush HMTL cashes good for?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/1-gol-ibe-5-gol-ibe-faqs-what-types-of-notifications-are-the-most-used-ones-and-what-are-these-good-for",
-      "path": "docs/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-what-types-of-notifications-are-the-most-used-ones-and-what-are-these-good-for.md",
-      "title": "What types of notifications are the most used ones and what are these good for?",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/faq",
-      "path": "docs/troubleshooting/faq.md",
-      "title": "FAQ",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
-    },
-    {
-      "id": "troubleshooting/gol-ibe-faqs",
-      "path": "docs/troubleshooting/gol-ibe-faqs.md",
-      "title": "5. GOL IBE - FAQs",
-      "category": "troubleshooting",
-      "categoryLabel": "Troubleshooting"
+      "id": "prompty/style-analyzer-hloubkova-analyza-stylu-psani",
+      "path": "docs/prompty/style-analyzer-hloubkova-analyza-stylu-psani.md",
+      "title": "🔍 Style Analyzer — Hloubková analýza stylu psaní",
+      "category": "prompty",
+      "categoryLabel": "Prompty & šablony"
     }
   ]
 }

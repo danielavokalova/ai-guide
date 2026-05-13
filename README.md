@@ -1,21 +1,33 @@
-# AI Guide
+# FAIL Portal (statický web)
 
-Samostatný statický web: články v `docs/`, rozhraní v `index.html`, seznam v `manifest.json`, obrázky v `images/`.
+Veřejný přehled materiálů **Future AI Leader 2026** — prompty, idea files a dokumenty. Všechno leží v `docs/`; rozhraní je `index.html` + `manifest.json`.
 
-Tento repozitář je jediný zdroj toho, co se na webu zobrazuje — není spojený s žádným jiným veřejným projektem ani stránkou.
+## Obsah
 
-## Obnovení obsahu (volitelné)
+- `docs/dokumenty/` — návody (včetně exportu zadání z Wordu `fail-13-3-zadani.md`)
+- `docs/idea-files/`
+- `docs/prompty/`
+- `docs/prehled-portal-fail.md` — rejstřík odkazů (převzat z původního README balíčku)
 
-Skript jen zkopíruje Markdown a obrázky ze složek, které nastavíš v proměnných prostředí, a znovu vygeneruje `manifest.json`.
+## Obnovení `manifest.json`
+
+Po úpravě Markdownů v `docs/`:
 
 ```powershell
-$env:AI_GUIDE_DOCS_SOURCE = "C:\cesta\k\markdown-slozce"
-$env:AI_GUIDE_PUBLIC = "C:\cesta\k\public-obrazkum"
 python build_site.py
 ```
 
-Potom commitni změny v `docs/`, `images/` a `manifest.json`.
+## Jednorázový import ze složky (rozbalený ZIP)
+
+Složka musí obsahovat přímo podsložky `dokumenty`, `idea-files`, `prompty`:
+
+```powershell
+$env:FAIL_PORTAL_IMPORT = "C:\cesta\k\rozbalenemu-zipu"
+python build_site.py --import
+```
+
+Pak zkontroluj `docs/`, případně doplněné soubory (např. export z Wordu), znovu spusť `python build_site.py` bez `--import` a commitni.
 
 ## Publikace
 
-V nastavení repozitáře na GitHubu zapni Pages z větve `main` z kořene projektu. V repu je soubor `.nojekyll`.
+GitHub Pages z větve `main`, kořen repozitáře. Soubor `.nojekyll` je v repu.

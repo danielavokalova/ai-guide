@@ -1,11 +1,16 @@
 """
-Rebuild the AI Guide static site: copy Markdown + images into this repo and regenerate manifest.json.
+Regenerate manifest.json from all Markdown files under docs/.
+
 Run from repo root: python build_site.py
 
-Paths default to optional local sibling folders; override with AI_GUIDE_DOCS_SOURCE and AI_GUIDE_PUBLIC.
+Optional one-off import (složka musí obsahovat podsložky dokumenty, idea-files, prompty):
+
+  set FAIL_PORTAL_IMPORT=C:\\cesta\\k\\rozbalenemu-zipu
+  python build_site.py --import
 """
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import shutil
@@ -14,18 +19,10 @@ from pathlib import Path
 DEST = Path(__file__).resolve().parent
 DOCS = DEST / "docs"
 
-# Optional: when unset, try common local layout (repo on Desktop).
-_default_source = DEST.parent / "new_help" / "gitbook_golhelp" / "content" / "docs"
-_default_public = DEST.parent / "new_help" / "gitbook_golhelp" / "public"
-SOURCE = Path(os.environ.get("AI_GUIDE_DOCS_SOURCE", str(_default_source)))
-PUBLIC = Path(os.environ.get("AI_GUIDE_PUBLIC", str(_default_public)))
-
 CATEGORY_LABELS = {
-    "getting-started": "Getting started",
-    "configuration": "Configuration",
-    "operations": "Operations",
-    "release-notes": "Release notes",
-    "troubleshooting": "Troubleshooting",
+    "dokumenty": "Dokumenty & návody",
+    "idea-files": "Idea files",
+    "prompty": "Prompty & šablony",
 }
 
 
@@ -36,41 +33,49 @@ def title_from_md(text: str, fallback: str) -> str:
     return fallback
 
 
-def main() -> None:
-    if not SOURCE.is_dir():
-        raise SystemExit(f"Missing source tree: {SOURCE}")
+def category_for(rel: str) -> tuple[str, str]:
+    parts = rel.split("/")
+    if len(parts) >= 2:
+        key = parts[0]
+        return key, CATEGORY_LABELS.get(key, key.replace("-", " ").title())
+    return "prehled", "Přehled portálu"
+
+
+def do_import(root: Path) -> None:
+    required = ("dokumenty", "idea-files", "prompty")
+    for name in required:
+        if not (root / name).is_dir():
+            raise SystemExit(f"Import: missing folder {name!r} under {root}")
 
     if DOCS.exists():
         shutil.rmtree(DOCS)
-    shutil.copytree(SOURCE, DOCS)
+    DOCS.mkdir(parents=True)
+    for name in required:
+        shutil.copytree(root / name, DOCS / name)
 
     imgs = DEST / "images"
     if imgs.exists():
         shutil.rmtree(imgs)
-    pub_img = PUBLIC / "images"
-    if pub_img.is_dir():
-        shutil.copytree(pub_img, imgs)
+
+
+def write_manifest() -> int:
+    if not DOCS.is_dir():
+        raise SystemExit(f"Missing {DOCS}")
 
     entries: list[dict[str, str]] = []
     for md in sorted(DOCS.rglob("*.md")):
         rel = md.relative_to(DOCS).as_posix()
-        parts = rel.split("/")
-        category = parts[0] if len(parts) > 1 else "docs"
         raw = md.read_text(encoding="utf-8")
-        raw = raw.replace("](/images/", "](images/")
-        raw = raw.replace("![](/images/", "![](images/")
-        md.write_text(raw, encoding="utf-8")
         stem_title = md.stem.replace("-", " ").replace("_", " ").title()
         title = title_from_md(raw, stem_title)
+        cat_key, cat_label = category_for(rel)
         entries.append(
             {
                 "id": rel[:-3] if rel.endswith(".md") else rel,
                 "path": f"docs/{rel}",
                 "title": title,
-                "category": category,
-                "categoryLabel": CATEGORY_LABELS.get(
-                    category, category.replace("-", " ").title()
-                ),
+                "category": cat_key,
+                "categoryLabel": cat_label,
             }
         )
 
@@ -78,7 +83,27 @@ def main() -> None:
         json.dumps({"articles": entries}, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
-    print(f"Wrote manifest with {len(entries)} articles.")
+    return len(entries)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--import",
+        dest="do_import",
+        action="store_true",
+        help="Copy dokumenty/, idea-files/, prompty/ from FAIL_PORTAL_IMPORT before manifest.",
+    )
+    args = parser.parse_args()
+
+    if args.do_import:
+        root = os.environ.get("FAIL_PORTAL_IMPORT", "").strip()
+        if not root:
+            raise SystemExit("Set FAIL_PORTAL_IMPORT to the extracted FAIL zip folder.")
+        do_import(Path(root))
+
+    n = write_manifest()
+    print(f"Wrote manifest with {n} articles.")
 
 
 if __name__ == "__main__":
